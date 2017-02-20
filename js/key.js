@@ -1,0 +1,1 @@
+var Key = { Copyright: "Interligo", Key: "faygynV0aY2cYW0CSE/e"};
