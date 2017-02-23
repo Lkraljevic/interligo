@@ -1,0 +1,76 @@
+/* CONTACT.STYL ================================ */
+#contact
+
+	.contact-wrap
+		flexbox()
+		flex-flow: column nowrap
+		background: colorDarkBlue
+		padding-top: 100px
+
+
+/* Contact Top */
+#contact .contact-top
+	.container
+		flexbox()
+		flex-flow: row nowrap
+		justify-content: space-between
+
+	.about
+		flexbox()
+		flex-flow: column nowrap
+		color: colorGrayNew
+		
+		ul
+			padding-top: 20px
+
+
+	.contacts
+		.contacts__item
+			flexbox()
+			flex-flow: row nowrap
+
+			.contacts__item--image
+				width: 100px
+				height: 100px
+				border-radius(100%)
+				border: 3px solid colorWhite
+				background-size: 100px
+
+				&.anamarija
+					background: url(img/anamarija.png) no-repeat center
+
+				&.meri
+					background: url(img/meri.png) no-repeat center
+
+			.contacts__item--content
+				flexbox()
+				flex-flow: column nowrap
+
+				
+
+
+/* Contact Bot */
+#contact .contact-bot
+	background: colorDarkerBlue
+	height: 50px
+	flexbox()
+	align-items: center
+
+	&.container
+		flexbox()
+		justify-content: flex-end
+
+	.social
+		flexbox()
+		flex-flow: row nowrap
+		justify-content: space-between
+		width: 200px
+
+
+
+
+
+
+
+
+

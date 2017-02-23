@@ -1,0 +1,133 @@
+/* GLOBAL ======================================= */
+
+/* variables & mixins */
+@import 'global/variables'
+@import 'global/mixins'
+@import 'global/colorPalete'
+
+/* overwrites ========================== */
+img
+	border: none
+	max-width: 100%
+	height: auto
+
+ul,
+li
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+a
+	text-decoration: none
+
+/* /overwrites ========================== */
+
+
+
+.show
+	display: block
+.desktop-hide
+	display: none
+.desktop-show
+	display: block
+
+
+section
+	max-width: 1440px
+	margin: 0 auto
+
+section#book
+	max-width: 100%
+	width: 100%
+
+.container
+	max-width: 960px
+	margin: 0 auto
+
+.section-row
+	width: 100%
+	position: relative
+	clear: both
+
+
+/* H1 & H3 Headings ========================== */
+h1.title-h1
+	font-family: font2
+	font-size: fontH1
+	color: colorBlue
+	letter-spacing: 0
+	line-height: 70px
+	position: relative
+	padding-bottom: 20px
+
+	&.line::after
+		display: block
+		position: absolute
+		content: ''
+		background: colorBlue
+		width: 40px
+		height: 5px
+		margin-left: -15px
+		margin-top: 20px
+
+	&.white
+		color: colorWhite
+
+h3
+	font-family: font2
+	font-size: fontH3
+	color: colorBlue
+	letter-spacing: 0
+
+	&:after
+		display: block
+		position: absolute
+		content: ''
+		background: colorBlue
+		width: 40px
+		height: 5px
+		margin-left: -60px
+		margin-top: -10px
+
+
+
+.txt-blue
+	color: colorBlue
+	font-family: font2
+	font-size: fontSize1
+	font-weight: 700
+	line-height: 33px
+
+	&.price-box
+		min-width: 80px
+
+.txt-blue-sans
+	color: colorBlue
+	font-family: font1
+	font-size: fontSize1
+	line-height: 33px
+
+.txt-white
+	color: colorWhite
+	font-family: font2
+	font-size: fontSize1
+	font-weight: 700
+	line-height: 33px
+
+
+
+.red
+	color: colorRed
+
+.white
+	color: colorWhite
+
+
+
+
+
+
+
+
+
+

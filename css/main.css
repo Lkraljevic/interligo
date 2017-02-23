@@ -1,0 +1,311 @@
+/* MAIN STYL ======================================= */
+/* import global styl */
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.show {
+  display: block;
+}
+.desktop-hide {
+  display: none;
+}
+.desktop-show {
+  display: block;
+}
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+section#book {
+  max-width: 100%;
+  width: 100%;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.section-row {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+h1.title-h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 56px;
+  color: #3797dd;
+  letter-spacing: 0;
+  line-height: 70px;
+  position: relative;
+  padding-bottom: 20px;
+}
+h1.title-h1.line::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: #3797dd;
+  width: 40px;
+  height: 5px;
+  margin-left: -15px;
+  margin-top: 20px;
+}
+h1.title-h1.white {
+  color: #fff;
+}
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
+  color: #3797dd;
+  letter-spacing: 0;
+}
+h3:after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: #3797dd;
+  width: 40px;
+  height: 5px;
+  margin-left: -60px;
+  margin-top: -10px;
+}
+.txt-blue {
+  color: #3797dd;
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.txt-blue.price-box {
+  min-width: 80px;
+}
+.txt-blue-sans {
+  color: #3797dd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  line-height: 33px;
+}
+.txt-white {
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.red {
+  color: #d0011b;
+}
+.white {
+  color: #fff;
+}
+/* import all sections styl */
+#main-nav {
+  background: #fff;
+  padding: 50px 0;
+}
+#main-nav .big-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+/* NAV ITEM ======== */
+/* NAV ITEM - HOVER ======== */
+}
+#main-nav .big-nav a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18%;
+}
+#main-nav .big-nav .big-nav__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  -webkit-transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+}
+#main-nav .big-nav .big-nav__item .big-nav__item--icon {
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #3797dd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-nav .big-nav .big-nav__item .big-nav__item--icon i {
+  font-size: 30px;
+  color: #3797dd;
+}
+#main-nav .big-nav .big-nav__item .big-nav__item--name {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #40404c;
+  margin-top: 20px;
+}
+#main-nav .big-nav .big-nav__item .big-nav__item--line {
+  width: 70px;
+  height: 3px;
+  background: #3797dd;
+  margin: 20px 0;
+}
+#main-nav .big-nav .big-nav__item .big-nav__item--desc {
+  font-size: 13px;
+  color: #7e7e88;
+}
+#main-nav .big-nav .big-nav__item:hover {
+  background: #3797dd;
+}
+#main-nav .big-nav .big-nav__item:hover .big-nav__item--icon {
+  border: 2px solid #fff;
+}
+#main-nav .big-nav .big-nav__item:hover .big-nav__item--icon i {
+  color: #fff;
+}
+#main-nav .big-nav .big-nav__item:hover .big-nav__item--name,
+#main-nav .big-nav .big-nav__item:hover .big-nav__item--desc {
+  color: #fff;
+}
+#main-nav .big-nav .big-nav__item:hover .big-nav__item--line {
+  background: #fff;
+}
+#contact .contact-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  background: #151f2b;
+  padding-top: 100px;
+}
+#contact .contact-top .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#contact .contact-top .about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  color: #898989;
+}
+#contact .contact-top .about ul {
+  padding-top: 20px;
+}
+#contact .contact-top .contacts .contacts__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#contact .contact-top .contacts .contacts__item .contacts__item--image {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  background-size: 100px;
+}
+#contact .contact-top .contacts .contacts__item .contacts__item--image.anamarija {
+  background: url("img/anamarija.png") no-repeat center;
+}
+#contact .contact-top .contacts .contacts__item .contacts__item--image.meri {
+  background: url("img/meri.png") no-repeat center;
+}
+#contact .contact-top .contacts .contacts__item .contacts__item--content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#contact .contact-bot {
+  background: #0c1218;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+#contact .contact-bot.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-end;
+}
+#contact .contact-bot .social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 200px;
+}
+html,
+body,
+div,
+table,
+p,
+input {
+  color: #40404c;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: #fff;
+}
