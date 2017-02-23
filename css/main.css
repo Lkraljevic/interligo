@@ -40,72 +40,23 @@ section#book {
   position: relative;
   clear: both;
 }
-h1.title-h1 {
-  font-family: 'Merriweather', serif;
-  font-size: 56px;
-  color: #3797dd;
-  letter-spacing: 0;
-  line-height: 70px;
-  position: relative;
-  padding-bottom: 20px;
-}
-h1.title-h1.line::after {
-  display: block;
-  position: absolute;
-  content: '';
-  background: #3797dd;
-  width: 40px;
-  height: 5px;
-  margin-left: -15px;
-  margin-top: 20px;
-}
-h1.title-h1.white {
-  color: #fff;
+h3,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 h3 {
-  font-family: 'Merriweather', serif;
-  font-size: 21px;
-  color: #3797dd;
-  letter-spacing: 0;
-}
-h3:after {
-  display: block;
-  position: absolute;
-  content: '';
-  background: #3797dd;
-  width: 40px;
-  height: 5px;
-  margin-left: -60px;
-  margin-top: -10px;
-}
-.txt-blue {
-  color: #3797dd;
-  font-family: 'Merriweather', serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 33px;
-}
-.txt-blue.price-box {
-  min-width: 80px;
-}
-.txt-blue-sans {
-  color: #3797dd;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
-  line-height: 33px;
-}
-.txt-white {
+  font-size: 24px;
   color: #fff;
-  font-family: 'Merriweather', serif;
-  font-size: 21px;
   font-weight: 700;
-  line-height: 33px;
+  padding-bottom: 10px;
 }
-.red {
-  color: #d0011b;
-}
-.white {
+h4 {
+  font-size: 14px;
   color: #fff;
+  font-weight: 100;
+  opacity: 0.5;
 }
 /* import all sections styl */
 #main-nav {
@@ -206,6 +157,29 @@ h3:after {
 #main-nav .big-nav .big-nav__item:hover .big-nav__item--line {
   background: #fff;
 }
+#contact div,
+#contact p,
+#contact span {
+  color: #898989;
+}
+#contact a {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#contact a:hover {
+  color: #3797dd;
+}
+#contact i {
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  color: #3797dd;
+  font-size: 16px;
+}
 #contact .contact-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -215,6 +189,10 @@ h3:after {
   flex-flow: column nowrap;
   background: #151f2b;
   padding-top: 100px;
+}
+#contact .contact-top {
+  padding-bottom: 30px;
+  font-size: 14px;
 }
 #contact .contact-top .container {
   display: -webkit-box;
@@ -232,7 +210,25 @@ h3:after {
   display: -ms-flexbox;
   display: flex;
   flex-flow: column nowrap;
-  color: #898989;
+}
+#contact .contact-top .about .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 20px;
+}
+#contact .contact-top .about .info .info-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 30px;
 }
 #contact .contact-top .about ul {
   padding-top: 20px;
@@ -244,6 +240,7 @@ h3:after {
   display: -ms-flexbox;
   display: flex;
   flex-flow: row nowrap;
+  padding-bottom: 30px;
 }
 #contact .contact-top .contacts .contacts__item .contacts__item--image {
   width: 100px;
@@ -254,6 +251,7 @@ h3:after {
   border-radius: 100%;
   border: 3px solid #fff;
   background-size: 100px;
+  margin-right: 10px;
 }
 #contact .contact-top .contacts .contacts__item .contacts__item--image.anamarija {
   background: url("img/anamarija.png") no-repeat center;
@@ -269,9 +267,20 @@ h3:after {
   display: flex;
   flex-flow: column nowrap;
 }
+#contact .contact-top .contacts .contacts__item .contacts__item--content .contacts-name {
+  text-transform: capitalize;
+  font-size: 16px;
+  padding-bottom: 16px;
+  color: #fff;
+}
+#contact .contact-top .contacts .contacts__item .contacts__item--content span {
+  color: #3797dd;
+  min-width: 45px;
+  display: inline-block;
+}
 #contact .contact-bot {
   background: #0c1218;
-  height: 50px;
+  height: 80px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -279,15 +288,15 @@ h3:after {
   display: flex;
   align-items: center;
 }
-#contact .contact-bot.container {
+#contact .contact-bot .copyright-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  flex-flow: row nowrap;
 }
-#contact .contact-bot .social {
+#contact .contact-bot .copyright-wrap .social {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -295,7 +304,21 @@ h3:after {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 200px;
+}
+#contact .contact-bot .copyright-wrap .social a:hover i {
+  color: #fff;
+}
+#contact .contact-bot .copyright-wrap .social a i {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 16px;
+}
+#contact .contact-bot .copyright-wrap .copyright {
+  font-size: 14px;
+  color: #40404c;
 }
 html,
 body,

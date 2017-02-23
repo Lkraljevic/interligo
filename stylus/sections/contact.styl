@@ -1,5 +1,24 @@
 /* CONTACT.STYL ================================ */
 #contact
+	/* text color */
+	div, p, span
+		color: colorGrayNew
+	
+	/* links */
+	a
+		color: colorWhite
+		transition(0.5s)
+		
+		&:hover
+			color: colorBlue
+
+	/* fontawsome icons */
+	i
+		width: 30px
+		text-align: center
+		margin-right: 10px
+		color: colorBlue
+		font-size: 16px
 
 	.contact-wrap
 		flexbox()
@@ -10,16 +29,31 @@
 
 /* Contact Top */
 #contact .contact-top
+	padding-bottom: 30px
+	font-size: 14px
+
 	.container
 		flexbox()
 		flex-flow: row nowrap
 		justify-content: space-between
+		
 
 	.about
 		flexbox()
 		flex-flow: column nowrap
-		color: colorGrayNew
 		
+		.info
+			flexbox()
+			flex-flow: column nowrap
+			padding-top: 20px
+		
+			.info-row
+				flexbox()
+				flex-flow: row nowrap
+				align-items: center
+				height: 30px
+
+
 		ul
 			padding-top: 20px
 
@@ -28,6 +62,7 @@
 		.contacts__item
 			flexbox()
 			flex-flow: row nowrap
+			padding-bottom: 30px
 
 			.contacts__item--image
 				width: 100px
@@ -35,6 +70,7 @@
 				border-radius(100%)
 				border: 3px solid colorWhite
 				background-size: 100px
+				margin-right: 10px
 
 				&.anamarija
 					background: url(img/anamarija.png) no-repeat center
@@ -46,25 +82,47 @@
 				flexbox()
 				flex-flow: column nowrap
 
+				.contacts-name
+					text-transform: capitalize
+					font-size: 16px
+					padding-bottom: 16px
+					color: colorWhite
+
+				span
+					color: colorBlue
+					min-width: 45px
+					display: inline-block
+
 				
 
 
 /* Contact Bot */
 #contact .contact-bot
 	background: colorDarkerBlue
-	height: 50px
+	height: 80px
 	flexbox()
 	align-items: center
 
-	&.container
-		flexbox()
-		justify-content: flex-end
-
-	.social
+	.copyright-wrap
 		flexbox()
 		flex-flow: row nowrap
-		justify-content: space-between
-		width: 200px
+
+		.social
+			flexbox()
+			flex-flow: row nowrap
+			justify-content: space-between
+
+			a:hover i
+				color: colorWhite
+			a i
+				transition(.5s)
+				font-size: 16px
+
+
+		.copyright
+			font-size: 14px
+			color: colorDarkGray
+
 
 
 
