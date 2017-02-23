@@ -127,7 +127,7 @@ $( function() {
 				}
 
 		},
-		defaultID = "meetpageflip",	//"demo1",
+		defaultID = "casopis",	//"demo1",
 		startID = defaultID,
 		loadedID,
 		closing,
