@@ -64,24 +64,40 @@
 
 		<div class="body-wrap">
 
+			<!-- Logo Row -->
+			<div class="logo-wrap">
+				<div class="container">
+					<div class="company-logo">
+						<a href="#"><img src="img/interligo-logo.jpg" alt="Interligo"></a>
+					</div>
+				</div>
+			</div>
+
+
 			<!-- book -->
 			<section id="book">
 				<div class="section-row">
+					<div class="book-wrap">
 
-					<div id="bookselector">
-						<ul>
-							<li onClick="startPageflip('meetpageflip');">Meet Pageflip 5</li>
-							<li onClick="startPageflip('demo2');">Demo Book 2</li>
-							<li onClick="startPageflip('book');">Empty Book</li>
-							<li onClick="startPageflip('casopis');">Časopis</li>
-						</ul>	
-					</div>
 
-					<!-- start embed pageflip -->
-					<div id="pageflip"></div>
-					<!-- end embed pageflip -->
-					<div class="pageflip-credits">Powered by <a href="http://pageflip-books.com" target="_blank">Pageflip 5</a></div>
-				
+						<!-- start embed pageflip -->
+						<div id="pageflip"></div>
+						<!-- end embed pageflip -->
+						<div class="pageflip-credits">Powered by <a href="http://pageflip-books.com" target="_blank">Pageflip 5</a></div>
+
+
+						<div id="bookselector">
+							<ul class="shelf">
+								<li onClick="startPageflip('meetpageflip');">Meet Pageflip 5</li>
+								<li onClick="startPageflip('demo2');">Demo Book 2</li>
+							</ul>
+							<ul class="shelf">
+								<li onClick="startPageflip('book');">Empty Book</li>
+								<li onClick="startPageflip('casopis');">Časopis</li>
+							</ul>
+						</div>
+					
+					</div><!-- /book-wrap -->
 				</div><!-- /section-row -->
 			</section><!-- /book -->
 

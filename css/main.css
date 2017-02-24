@@ -24,7 +24,6 @@ a {
   display: block;
 }
 section {
-  max-width: 1440px;
   margin: 0 auto;
 }
 section#book {
@@ -73,6 +72,67 @@ h4 {
   -ms-text-size-adjust: none;
 }
 /* import all sections styl */
+.logo-wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.logo-wrap .company-logo {
+  position: relative;
+  width: 90px;
+}
+.book-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#pageflip {
+  flex-grow: 1;
+  height: 100vh;
+}
+#bookselector {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  flex-shrink: 0;
+}
+#bookselector ul.shelf::after {
+  display: block;
+  content: '';
+  width: 300px;
+  height: 60px;
+  background: url("../img/bookshelf.png") no-repeat center;
+  background-size: 300px;
+}
+#bookselector .shelf li {
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  margin: 0 10px -15px 10px;
+  background: url("../img/book.png") no-repeat center;
+  background-size: 90px;
+  -webkit-transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+}
+#bookselector .shelf li:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
 #main-nav {
   background: #fff;
   padding: 50px 0;
