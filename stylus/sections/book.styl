@@ -1,0 +1,55 @@
+/* BOOK.STYL ================================ */
+
+.logo-wrap
+    position: absolute
+    width: 100%
+    z-index: 10
+
+    .company-logo
+        position: relative
+        width: 90px
+
+
+
+.book-wrap
+    flexbox()
+    flex-flow: row nowrap
+
+#pageflip
+    flex-grow: 1
+    height: 100vh
+
+
+#bookselector
+    flexbox()
+    flex-flow: column nowrap
+    flex-center()
+    width: 350px
+    flex-shrink: 0
+
+    ul.shelf::after
+        display: block
+        content: ''
+        width: 300px
+        height: 60px
+        background: url(../img/bookshelf.png) no-repeat center
+        background-size: 300px
+
+    .shelf li
+        display: inline-block
+        width: 100px
+        height: 150px
+        margin: 0 10px -15px 10px
+        background: url(../img/book.png) no-repeat center
+        background-size: 90px
+        transition(1.2s)
+
+        &:hover
+            transform-scale(1.1)
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+/* MAIN-NAV.STYL ================================ */
+
+#main-nav
+	background: colorWhite
+	padding: 50px 0
+
+	.big-nav
+		flexbox()
+		flex-flow: row nowrap
+		align-items: stretch
+		justify-content: space-between
+
+		a
+			flexbox()
+			width: 18%
+
+		
+		/* NAV ITEM ======== */
+		.big-nav__item
+			flexbox()
+			flex-flow: column nowrap
+			align-items: center
+			justify-content: flex-start
+			width: 100%
+			text-align: center
+			box-sizing()
+			padding: 10px
+			transition(1.2s)
+
+			.big-nav__item--icon
+				width: 90px
+				height: 90px
+				border-radius(100%)
+				border: 2px solid colorBlue
+				flexbox()
+				flex-center()
+
+				i
+					font-size: 30px
+					color: colorBlue
+
+			.big-nav__item--name
+				text-transform: uppercase
+				font-size: 16px
+				font-weight: 700
+				color: colorDarkGray
+				margin-top: 20px
+
+			.big-nav__item--line
+				width: 70px
+				height: 3px
+				background: colorBlue
+				margin: 20px 0
+
+			.big-nav__item--desc
+				font-size: 13px
+				color: colorGray
+
+		
+		/* NAV ITEM - HOVER ======== */
+		.big-nav__item:hover
+			background: colorBlue
+
+			.big-nav__item--icon
+				border: 2px solid colorWhite
+
+				i
+					color: colorWhite
+			
+			.big-nav__item--name,
+			.big-nav__item--desc
+				color: colorWhite
+
+			.big-nav__item--line
+				background: colorWhite
+
+
+
+
+
+
+
+
