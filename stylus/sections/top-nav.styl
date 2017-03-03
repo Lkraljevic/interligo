@@ -1,0 +1,55 @@
+/* TOP-NAV.STYL ================================ */
+
+#top-nav
+    position: relative
+    width: 100%
+    min-height: 80px
+    background: colorWhite
+    box-shadow(0 0 10px rgba(0, 0, 0, 0.1))
+    z-index: 10
+
+#top-nav .logo-wrap
+    flexbox()
+    flex-flow: column nowrap
+    justify-content: center
+    
+    .company-logo
+        position: relative
+        width: 90px
+
+    .top-nav
+        height: 50px
+
+        ul
+            flexbox()
+            flex-flow: row wrap
+            // justify-content: space-between
+            align-items: center
+            height: 100%
+
+            li
+                height: 100%
+
+        a
+            flexbox()
+            flex-center()
+            text-transform: uppercase
+            box-sizing()
+            padding: 0 15px
+            color: colorDarkGray
+            background: colorWhite
+            transition(.7s)
+            height: 100%
+
+            &:hover
+                color: colorWhite
+                background: colorBlue
+
+
+
+
+
+
+
+
+
