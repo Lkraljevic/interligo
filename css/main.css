@@ -133,9 +133,20 @@ h4 {
   transition: all 0.7s ease;
   height: 100%;
 }
-#top-nav .logo-wrap .top-nav a:hover {
+#top-nav .logo-wrap .top-nav a:hover,
+#top-nav .logo-wrap .top-nav a.active {
   color: #fff;
   background: #3797dd;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -ms-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -ms-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 #pf-stage {
   background: #3797dd !important;
