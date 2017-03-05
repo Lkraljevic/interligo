@@ -96,7 +96,7 @@ h4 {
   width: 90px;
 }
 #top-nav .logo-wrap .top-nav {
-  height: 50px;
+  height: 40px;
 }
 #top-nav .logo-wrap .top-nav ul {
   display: -webkit-box;
@@ -136,7 +136,7 @@ h4 {
 #top-nav .logo-wrap .top-nav a:hover,
 #top-nav .logo-wrap .top-nav a.active {
   color: #fff;
-  background: #3797dd;
+  background: #32a1d8;
   -webkit-border-top-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
   -ms-border-top-left-radius: 10px;
@@ -149,7 +149,7 @@ h4 {
   border-top-right-radius: 10px;
 }
 #pf-stage {
-  background: #3797dd !important;
+  background: #32a1d8 !important;
 }
 #pageflip {
   flex-grow: 1;
@@ -162,7 +162,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   flex-flow: row nowrap;
-  background: #3797dd;
+  background: #32a1d8;
 }
 #bookselector {
   display: -webkit-box;
@@ -260,7 +260,7 @@ h4 {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   border-radius: 100%;
-  border: 2px solid #3797dd;
+  border: 2px solid #32a1d8;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -271,7 +271,7 @@ h4 {
 }
 #main-nav .big-nav .big-nav__item .big-nav__item--icon i {
   font-size: 30px;
-  color: #3797dd;
+  color: #32a1d8;
 }
 #main-nav .big-nav .big-nav__item .big-nav__item--name {
   text-transform: uppercase;
@@ -283,7 +283,7 @@ h4 {
 #main-nav .big-nav .big-nav__item .big-nav__item--line {
   width: 70px;
   height: 3px;
-  background: #3797dd;
+  background: #32a1d8;
   margin: 20px 0;
 }
 #main-nav .big-nav .big-nav__item .big-nav__item--desc {
@@ -291,7 +291,7 @@ h4 {
   color: #7e7e88;
 }
 #main-nav .big-nav .big-nav__item:hover {
-  background: #3797dd;
+  background: #32a1d8;
 }
 #main-nav .big-nav .big-nav__item:hover .big-nav__item--icon {
   border: 2px solid #fff;
@@ -320,13 +320,13 @@ h4 {
   transition: all 0.5s ease;
 }
 #contact a:hover {
-  color: #3797dd;
+  color: #32a1d8;
 }
 #contact i {
   width: 30px;
   text-align: center;
   margin-right: 10px;
-  color: #3797dd;
+  color: #32a1d8;
   font-size: 16px;
 }
 #contact .contact-wrap {
@@ -423,7 +423,7 @@ h4 {
   color: #fff;
 }
 #contact .contact-top .contacts .contacts__item .contacts__item--content span {
-  color: #3797dd;
+  color: #32a1d8;
   min-width: 45px;
   display: inline-block;
 }
