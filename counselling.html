@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-		<title>Interligo</title>
+		<title>Interligo - Counselling</title>
 
 		<!-- start custom fonts -->
 		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fauna+One">
@@ -14,7 +14,7 @@
 		<!-- start needed css style files -->
 		<link type="text/css" rel="stylesheet" href="css/main.css">	        
 		<link type="text/css" rel="stylesheet" href="css/pageflip.css">	
-		<!--<link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">	-->
+		<link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">	
 		<!-- end needed css style files -->
 
 		<!-- start font-awesome -->
@@ -28,60 +28,11 @@
 		<script type="text/javascript" src="js/pageflip5-multibook-loader.js"></script>
 		<!-- end needed js libraries -->
 		
-		<style>
-		
-			body {
-				margin: 0px;
-				width: 100%;
-				height: 100%;
-				background: #ececec;
-			
-				font-family: "Fauna One", "Lucida Grande", Helvetica, sans-serif;
-				font-size: 13px;
-			}
-			#bookselector {
-				text-align: center;
-			}
-			#bookselector ul li {
-				cursor: pointer;
-				list-style: none;
-				display: inline-block;
-				margin-right: 16px;
-			}
-			#pageflip {
-				-webkit-text-size-adjust: none;
-				-moz-text-size-adjust: none;
-				-ms-text-size-adjust: none;
-			}
-		
-		</style>
 		
 	</head>
 	<body> 
 
-		<div class="popup hide">
-			<div class="dialog">
-				<div class="dialog__close">
-					<div class="btn-close">
-						<i class="fa fa-times" aria-hidden="true"></i>
-					</div>
-				</div>
-				<div class="dialog__wrap">
-					<div class="dialog__desc">
-						Molimo unesite lozinku:
-					</div>
-
-					<div class="dialog__input">
-						<input type="password" placeholder="Lozinka">
-					</div>
-
-					<div class="dialog__button">
-						<button type="submit">Pošalji</button>
-					</div>
-				</div><!-- /dialog-wrap -->
-
-			</div>
-		</div><!-- /popup -->
+		
 
 
 		<div class="body-wrap">
@@ -98,9 +49,9 @@
 
 							<div class="top-nav">
 								<ul>
-									<li><a href="index.html" class="active">Naslovna</a></li>
+									<li><a href="index.html">Naslovna</a></li>
 									<li><a href="news.html">Novosti i događanja</a></li>
-									<li><a href="counselling.html">Savjetovalište za male poduzetnike u turizmu</a></li>
+									<li><a href="counselling.html" class="active">Savjetovalište za male poduzetnike u turizmu</a></li>
 									<li><a href="books.html">Knjige</a></li>
 									<li><a href="#contact">Kontakt</a></li>
 								</ul>
@@ -112,148 +63,34 @@
 			</section>
 
 
-			<!-- book -->
-			<section id="book">
-				<div class="section-row">
-					<div class="book-wrap">
 
 
-						<!-- start embed pageflip -->
-						<div id="pageflip"></div>
-						<!-- end embed pageflip -->
-						<div class="pageflip-credits">Powered by <a href="http://pageflip-books.com" target="_blank">Pageflip 5</a></div>
-
-
-						<div id="bookselector">
-							<ul class="shelf">
-								<li onClick="startPageflip('meetpageflip');">Meet Pageflip 5</li>
-								<li onClick="startPageflip('demo2');">Demo Book 2</li>
-							</ul>
-							<ul class="shelf">
-								<li onClick="startPageflip('casopis1');">Empty Book</li>
-								<li onClick="startPageflip('casopis');">Časopis</li>
-							</ul>
-						</div> 
-					
-					</div><!-- /book-wrap -->
-				</div><!-- /section-row -->
-			</section><!-- /book -->
-
-
-			<!-- main-nav -->
-			<section id="main-nav" class="section">
+			<!-- counselling -->
+			<section id="counselling" class="section">
 				<div class="section-row">
 					<div class="container">
 
-						<!-- big-nav -->
-						<div class="big-nav">
-
-							<!-- 1 -->
-							<a href="news.html">
-								<div class="big-nav__item">
-									<div class="big-nav__item--icon">
-										<i class="fa fa-newspaper-o" aria-hidden="true"></i>
-									</div>
-									<div class="big-nav__item--name">
-										Novosti i događanja
-									</div>
-
-									<div class="big-nav__item--line">
-
-									</div>
-
-									<div class="big-nav__item--desc">
-										Novosti i informacije vezane za Interligo
-									</div>
-								</div>
-							</a>
-
-							<!-- 2 -->
-							<!--<a href="#">
-								<div class="big-nav__item">
-									<div class="big-nav__item--icon">
-										<i class="fa fa-home" aria-hidden="true"></i>
-									</div>
-									<div class="big-nav__item--name">
-										Savjetovalište za obiteljski smještaj
-									</div>
-
-									<div class="big-nav__item--line">
-
-									</div>
-
-									<div class="big-nav__item--desc">
-										Razne informacije za obiteljski smještaj
-									</div>
-								</div>
-							</a>-->
-							
-							<!-- 3 -->
-							<a href="counselling.html">
-								<div class="big-nav__item">
-									<div class="big-nav__item--icon">
-										<i class="fa fa-briefcase" aria-hidden="true"></i>
-									</div>
-									<div class="big-nav__item--name">
-										Savjetovalište za male poduzetnike u turizmu
-									</div>
-
-									<div class="big-nav__item--line">
-
-									</div>
-
-									<div class="big-nav__item--desc">
-										Razne informacije za poduzetnike u turizmu
-									</div>
-								</div>
-							</a>
-
-							<!-- 4 -->
-							<a href="books.html">
-								<div class="big-nav__item">
-									<div class="big-nav__item--icon">
-										<i class="fa fa-book" aria-hidden="true"></i>
-									</div>
-									<div class="big-nav__item--name">
-										Knjige
-									</div>
-
-									<div class="big-nav__item--line">
-
-									</div>
-
-									<div class="big-nav__item--desc">
-										Pogledajte naš izbor knjiga
-									</div>
-								</div>
-							</a>
-
-
-							<!-- 5 -->
-							<a href="#contact">
-								<div class="big-nav__item">
-									<div class="big-nav__item--icon">
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-									</div>
-									<div class="big-nav__item--name">
-										Kontakt
-									</div>
-
-									<div class="big-nav__item--line">
-
-									</div>
-
-									<div class="big-nav__item--desc">
-										Interligo kontakt informacije
-									</div>
-								</div>
-							</a>
-
-						</div><!-- /big-nav -->
-
+                        <div class="counselling-wrap">
+                            <h3>Savjetovalište za male poduzetnike u turizmu</h3>
+                            <ul>
+                                <li>Analiza i razrada vaših poduzetničkih ideja</li>
+                                <li>Mogućnost sufinanciranja vaših poduzetničkih ideja i projekata</li>
+                                <li>Izrada dokumentacijeza samozapošljavanje</li>
+                                <li>Izrada dokumentacije za potpore za poduzetnike početnike</li>
+                                <li>Prijava za sufinanciranje bazena (za male iznajmljivače)</li>
+                                <li>Pomoć pri prijavi na nacionalne i EU projekte</li>
+                                <li>Edukacije za male poduzetnike i poduzetnike početnike</li>
+                                <li>Prelazak iz objekta sa apartmanima u mali obiteljski hotel</li>
+                                <li>Integralni i difuzni hoteli</li>
+                                <li>Pisanje projekata i sufinanciranje udruga</li>
+                                <li>suradnja sa jedinicama lokalne samouprave kod razvoja poduzetništva</li>
+                            </ul>
+                            <p>Dugogodišnje iskustvo u svim navedenim aktivnostima</p>
+                        </div>
+						
 					</div><!-- /container -->
 				</div><!-- /section-row -->
-			</section><!-- /main-nav -->
+			</section><!-- /counselling -->
 
 			<section id="contact" class="section">
 				<div class="section-row">
