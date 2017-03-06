@@ -63,6 +63,18 @@ h4 {
   font-weight: 100;
   opacity: 0.5;
 }
+.btn,
+margin: 0 auto,
+padding: 5px 20px,
+border: 1px solid colorBlue,
+color: colorBlue,
+background: colorWhite,
+font-size: 14px,
+font-weight: 100,
+transition(.7s),
+:hover,
+background: colorBlue,
+color: colorWhite,
 #bookselector {
   text-align: center;
 }
@@ -709,10 +721,8 @@ h4 {
   font-weight: 100;
 }
 .popup .dialog .dialog__button {
-  margin: 0 auto;
-  padding: 5px 10px;
-  color: #7e7e88;
-  font-size: 14px;
+  text-align: center;
+  margin-top: 6px;
 }
 html,
 body,
