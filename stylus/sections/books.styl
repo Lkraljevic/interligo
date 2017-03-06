@@ -1,0 +1,53 @@
+/* BOOKS.STYL ================================ */
+
+#books .books-wrap
+    flexbox()
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: flex-start
+    padding: 50px 0
+
+
+
+
+
+
+/* BOOKS ITEM */
+#books .books-wrap a
+    width: 23%
+    
+#books .books-wrap .books-item
+    flexbox()
+    flex-flow: column nowrap
+    align-items: center
+    margin-bottom: 40px
+
+    .books-item__img
+        width: 100px
+        height: 100px
+        overflow: hidden
+        background: colorBlue
+        margin-bottom: 20px
+
+    .books-item__price
+        font-size: 14px
+        font-weight: 400
+        color: colorBlue
+        
+        &.old
+            color: colorRed
+            font-size: 10px
+            text-decoration: line-through
+            margin-top: 5px
+
+
+    .books-item__line
+        width: 70px
+        height: 3px
+        background: colorBlue
+        margin: 20px 0
+
+    .books-item__desc
+        font-size: 12px
+        color: colorGray
+        text-align: center
