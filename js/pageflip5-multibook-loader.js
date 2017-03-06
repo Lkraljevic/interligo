@@ -1,5 +1,21 @@
 var startPageflip;
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 $( function() {
 	var $pageflip = $("#pageflip"),
 		pageflip,
@@ -117,17 +133,59 @@ $( function() {
 					ControlbarFile: "common/controlbar_svg.html",
 					GoogleAnalytics: true,
 					HashControl: true,
-					ShareLink: "http://pageflip-books.com",
-					ShareText: "Pageflip5, The Book Template for the Web",
-					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "http://pageflip-books.com/images/shareimage.jpg",
 					ShowCopyright: false,
 					Copyright: Key.Copyright,
 					Key: Key.Key
+				},
+			casopis1: {
+					PageDataFile: (getCookie("unlock") == '0702')?"books/casopis1/index.html":"books/casopis/casopis.html",
+					PageWidth: 600,
+					PageHeight: 800,
+					Margin: 32,
+					MarginBottom: 64,
+					PerformanceAware: false,
+					AutoScale: true,
+					//FullScale: true,
+					HardCover: true,
+					HardPages: false,
+					RightToLeft: false,
+					VerticalMode: false,
+					AlwaysOpened: false,
+					AutoFlipEnabled: false,
+					StartAutoFlip: false,
+					AutoFlipLoop: -1,
+					DropShadow: true,
+					NoFlipShadow: false,
+					Emboss: true,
+					DropShadowOpacity: 0.2,
+					FlipTopShadowOpacity: 0.2,
+					FlipShadowOpacity: 0.2,
+					HardFlipOpacity: 0.2,
+					EmbossOpacity: 0.2,
+					HashControl: true,
+					PageCache: 5,
+					MouseControl: true,
+					HotKeys: true,
+					ControlbarFile: "common/controlbar_svg.html",
+					ControlbarToFront: false,
+					FullScreenEnabled: true,
+					ShareLink: window.location.href,
+					ShareText: 'Interligo',
+					ShareVia: '@Interligo',
+					ShareImageURL: 'page0.jpg',
+					DisableSelection: true,
+					CenterSinglePage: true,
+					SinglePageMode: false,
+					ShowCopyright: false,
+					//Copyright: '©Interligo2017 ',
+					//Key: 'XGDCWcVcHA1yksRaYzDv'
+					Copyright: Key.Copyright,
+					Key: Key.Key
 				}
+			
 
 		},
-		defaultID = "casopis",	//"demo1",
+		defaultID = "casopis1",	//"demo1",
 		startID = defaultID,
 		loadedID,
 		closing,
@@ -141,8 +199,8 @@ $( function() {
 		id = getHashID();
 				
 	/* start the first book automatically! */
-	startPageflip = function( id ) {
-		if( closing || id==loadedID ) return
+	startPageflip = function( id , force) {
+		if( !force && (closing || id==loadedID)) return
 		if( loadedID ) {
 			/* we have a loaded book, so unload it first */
 			closing = true;
@@ -152,14 +210,19 @@ $( function() {
 			/* load the book */
 			loadedID = id;
 			var h = getHashID();
-			if( ( defaultID==id && h && h!=id ) || ( defaultID!=id && h!=id ) ) location.hash = id;
+			if( ( defaultID==id && h && h!=id ) || ( defaultID!=id && h!=id ) ) 
+				location.hash = id;
 			$pageflip.pageflipInit( bookConfig[id], id );
 			pageflip = $pageflip.pageflip();
+			window.pageflip = pageflip;
 		}
 	};
 	
 	if( bookConfig[id] && defaultID!=id ) {  startID = id; } 
-	else { if( $("#"+id).length ) gotoAnchor( "#"+id ); }
+	else { 
+		if( $("#"+id).length ) 
+			gotoAnchor( "#"+id ); 
+	}
 
 	startPageflip( startID );
 
