@@ -209,8 +209,8 @@ color: colorWhite,
 #bookselector .shelf li {
   display: inline-block;
   width: 100px;
-  height: 190px;
-  margin: 0 10px -15px 10px;
+  height: 150px;
+  margin: 0 10px -20px 10px;
   background: url("../img/book.png") no-repeat bottom;
   background-size: 80px;
   -webkit-transition: all 1s ease;
@@ -243,6 +243,46 @@ color: colorWhite,
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+}
+.newsletter {
+  position: absolute;
+  top: 40px;
+  width: 250px;
+  z-index: 10;
+}
+.newsletter .newsletter__text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.newsletter .newsletter__input input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.newsletter .newsletter__input input[type="text"] {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #7e7e88;
+  width: 180px;
+  margin-right: 5px;
+}
+.newsletter .newsletter__input input[type="button"] {
+  background: #6abf21;
+  border: 1px solid #6abf21;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.newsletter .newsletter__input input[type="button"]:hover {
+  border: 1px solid #fff;
 }
 #main-nav {
   background: #fff;
