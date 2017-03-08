@@ -42,6 +42,10 @@ section#book {
   max-width: 960px;
   margin: 0 auto;
 }
+.container-book {
+  max-width: 1340px;
+  margin: 0 auto;
+}
 .section-row {
   width: 100%;
   position: relative;
@@ -239,6 +243,9 @@ h4 {
   flex-grow: 1;
   height: 100vh;
 }
+#book {
+  background: #32a1d8;
+}
 .book-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -246,7 +253,6 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   flex-flow: row nowrap;
-  background: #32a1d8;
 }
 #bookselector {
   display: -webkit-box;
