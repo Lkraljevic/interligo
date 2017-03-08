@@ -2,6 +2,8 @@
 /* import global styl */
 body {
   font-size: 13px;
+  padding: 0;
+  margin: 0;
 }
 img {
   border: none;
@@ -211,8 +213,8 @@ color: colorWhite,
   width: 100px;
   height: 150px;
   margin: 0 10px -20px 10px;
-  background: url("../img/book.png") no-repeat bottom;
-  background-size: 80px;
+  background: url("../img/books/book.png") no-repeat bottom;
+  background-size: 80px !important;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -226,6 +228,18 @@ color: colorWhite,
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+}
+#bookselector .shelf li.book1 {
+  background: url("../img/books/kako-do-gosta.png") no-repeat bottom;
+}
+#bookselector .shelf li.book2 {
+  background: url("../img/books/kako-urediti-apartman.png") no-repeat bottom;
+}
+#bookselector .shelf li.book3 {
+  background: url("../img/books/mvp.png") no-repeat bottom;
+}
+#bookselector .shelf li.book4 {
+  background: url("../img/books/vodic.png") no-repeat bottom;
 }
 .last-page {
   position: absolute;
@@ -245,10 +259,9 @@ color: colorWhite,
   font-weight: 300;
 }
 .newsletter {
-  position: absolute;
-  top: 40px;
+  position: relative;
+  margin-bottom: 70px;
   width: 250px;
-  z-index: 10;
 }
 .newsletter .newsletter__text {
   color: #fff;
@@ -436,15 +449,7 @@ color: colorWhite,
   background-size: cover;
 }
 #counselling .counselling-wrap {
-  padding: 100px 0;
-}
-#counselling .counselling-wrap ul {
-  padding-bottom: 10px;
-}
-#counselling .counselling-wrap ul li {
-  list-style-type: circle;
-  line-height: 2;
-  margin-left: 20px;
+  padding: 50px 0;
 }
 #books .books-wrap {
   display: -webkit-box;
@@ -484,11 +489,35 @@ color: colorWhite,
   margin-bottom: 40px;
 }
 #books .books-wrap .books-item .books-item__img {
-  width: 100px;
-  height: 100px;
   overflow: hidden;
-  background: #32a1d8;
   margin-bottom: 20px;
+  width: 100px;
+  height: 150px;
+  background: url("../img/books/book.png") no-repeat bottom;
+  background-size: 80px !important;
+/* List of Books */
+/* List of Magazines */
+}
+#books .books-wrap .books-item .books-item__img.book1 {
+  background: url("../img/books/kako-do-gosta.png") no-repeat bottom;
+}
+#books .books-wrap .books-item .books-item__img.book2 {
+  background: url("../img/books/kako-urediti-apartman.png") no-repeat bottom;
+}
+#books .books-wrap .books-item .books-item__img.book3 {
+  background: url("../img/books/mvp.png") no-repeat bottom;
+}
+#books .books-wrap .books-item .books-item__img.book4 {
+  background: url("../img/books/vodic.png") no-repeat bottom;
+}
+#books .books-wrap .books-item .books-item__img.magazine1 {
+  background: url("../img/books/brac2015.png") no-repeat bottom;
+}
+#books .books-wrap .books-item .books-item__img.magazine2 {
+  background: url("../img/books/brac2016.png") no-repeat bottom;
+}
+#books .books-wrap .books-item .books-item__img.magazine3 {
+  background: url("../img/books/split2016.png") no-repeat bottom;
 }
 #books .books-wrap .books-item .books-item__price {
   font-size: 14px;
@@ -605,14 +634,14 @@ color: colorWhite,
   -ms-border-radius: 100%;
   border-radius: 100%;
   border: 3px solid #fff;
-  background-size: 100px;
+  background-size: 100px !important;
   margin-right: 10px;
 }
 #contact .contact-top .contacts .contacts__item .contacts__item--image.anamarija {
-  background: url("img/anamarija.png") no-repeat center;
+  background: url("../img/anamarija.png") no-repeat center;
 }
 #contact .contact-top .contacts .contacts__item .contacts__item--image.meri {
-  background: url("img/meri.png") no-repeat center;
+  background: url("../img/meri.png") no-repeat center;
 }
 #contact .contact-top .contacts .contacts__item .contacts__item--content {
   display: -webkit-box;

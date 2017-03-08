@@ -1,0 +1,64 @@
+/* QUERY.CSS ======================================= */
+
+
+@media only screen and (max-width: 801px), only screen and (max-device-width: 801px) {
+
+	.mobile-hide {
+		display: none;
+	}
+	.mobile-show {
+		display: block;
+	}
+
+	.container {
+		width: 80%;
+	}
+
+
+    /* BOOK ========= */
+    .book-wrap {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookselector {
+        position: relative;
+    }
+
+    .newsletter {
+        margin: 10px auto 30px auto;
+    }
+
+
+    /* BIG NAV ========= */
+    #main-nav .big-nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    #main-nav .big-nav a {
+        width: 70%;
+    }
+    #main-nav .big-nav .big-nav__item {
+        padding: 20px 0;
+    }
+
+
+	
+
+}/* media end */
+
+
+
+
+
+
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+
+}/* media end */
+
+
+
+
+
+

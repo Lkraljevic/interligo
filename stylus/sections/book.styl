@@ -40,13 +40,22 @@
         width: 100px
         height: 150px
         margin: 0 10px -20px 10px
-        background: url(../img/book.png) no-repeat bottom
-        background-size: 80px
+        background: url(../img/books/book.png) no-repeat bottom
+        background-size: 80px !important
         transition(1s)
         color: colorWhite
 
         &:hover
             transform-scale(1.1)
+
+    .shelf li.book1
+        background: url(../img/books/kako-do-gosta.png) no-repeat bottom
+    .shelf li.book2
+        background: url(../img/books/kako-urediti-apartman.png) no-repeat bottom
+    .shelf li.book3
+        background: url(../img/books/mvp.png) no-repeat bottom
+    .shelf li.book4
+        background: url(../img/books/vodic.png) no-repeat bottom
 
 
 
@@ -74,10 +83,9 @@
 /* LAST PAGE ==================== */
 
 .newsletter
-    position: absolute
-    top: 40px
+    position: relative
+    margin-bottom: 70px
     width: 250px
-    z-index: 10
 
     .newsletter__text
         color: colorWhite
