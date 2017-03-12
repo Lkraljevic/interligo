@@ -1,7 +1,7 @@
 /* QUERY.CSS ======================================= */
 
 
-@media only screen and (max-width: 801px), only screen and (max-device-width: 801px) {
+@media only screen and (max-width: 961px), only screen and (max-device-width: 961px) {
 
 	.mobile-hide {
 		display: none;
@@ -13,6 +13,18 @@
 	.container {
 		width: 80%;
 	}
+
+
+    /* TOP NAV ========= */
+    #top-nav {
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    #top-nav .logo-wrap {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
 
 
     /* BOOK ========= */
@@ -44,6 +56,64 @@
     }
 
 
+
+    /* CONTACT ========= */
+    #contact .contact-wrap {
+        padding-top: 80px;
+    }
+    #contact .contact-top .container {
+        flex-flow: column nowrap;
+    }
+    #contact .contact-top .about {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    #contact .contact-top .about .info .info-row {
+        justify-content: center;
+    }
+
+    #contact .contact-top .contacts .contacts__item {
+        justify-content: center;
+    }
+
+
+    /* COUNSELLING ========= */
+    #counselling .pricelist h3 {
+        text-align: center;
+    }
+    #counselling .pricelist .price {
+        margin-bottom: 40px;
+    }
+    #counselling .pricelist .price .price__row {
+        flex-flow: column nowrap;
+        margin-bottom: 10px;
+    }
+    #counselling .pricelist .price .price__row .price__name {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    #counselling .pricelist .price .price__row .price__line {
+        display: none;
+    }
+    #counselling .pricelist .price .price__row .price__price {
+        width: 100%;
+        text-align: center;
+    }
+    #counselling .pricelist .price__desc,
+    #counselling .pricelist .price__note {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    /* BOOKS ========= */
+    #books .books-wrap a {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 	
 
 }/* media end */
@@ -53,7 +123,35 @@
 
 
 
-@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+    
+    /* NEWS ========= */
+    #news .news-wrap .news-item .article .article__image {
+        display: none !important;
+    }
+
+
+    /* POPUP ========= */
+    .popup .dialog {
+        width: 280px;
+        height: 180px;
+    }
+
+    
+    /* COUNSELLING ========= */
+    #counselling .pricelist {
+        margin-bottom: 100px;
+    }
+
+    /* CONTACT ========= */
+    #contact .contact-top .contacts .contacts__item {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    #contact .contact-top .contacts .contacts__item .contacts__item--image {
+        margin-bottom: 10px;
+    }
+
 
 }/* media end */
 

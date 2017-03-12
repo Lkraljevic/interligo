@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="description" content="Interligo">
+		<meta name="author" content="Luka Horvatić, horvaticluka@gmail.com">
+		<meta name="keywords" content="Interligo, Books, knjige, Brač, Split, Brac, counselling, turizam, oglašavanje">
 		<meta http-equiv="content-type" content="text/html;charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-		<title>Interligo - Counselling</title>
+		<title>Interligo - Savjetovalište</title>
 
 		<!-- start custom fonts -->
 		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fauna+One">
@@ -13,9 +16,9 @@
 		
 		<!-- start needed css style files -->
 		<link type="text/css" rel="stylesheet" href="css/main.css">	        
-		<link type="text/css" rel="stylesheet" href="css/pageflip.css">
-        <link type="text/css" rel="stylesheet" href="css/query.css">
-		<!--<link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">-->
+		<!--<link type="text/css" rel="stylesheet" href="css/pageflip.css">-->
+		<link type="text/css" rel="stylesheet" href="css/query.css">
+		<!--<link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">	-->
 		<!-- end needed css style files -->
 
 		<!-- start font-awesome -->
@@ -24,23 +27,45 @@
 
 		<!-- start needed js libraries -->
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
-		<script type="text/javascript" src="js/pageflip5-min.js"></script>
-		<script type="text/javascript" src="js/key.js"></script>
-		<script type="text/javascript" src="js/pageflip5-multibook-loader.js"></script>
+		<!--<script type="text/javascript" src="js/pageflip5-min.js"></script>-->
+		<!--<script type="text/javascript" src="js/key.js"></script>-->
+		<!--<script type="text/javascript" src="js/pageflip5-multibook-loader.js"></script>-->
 		<!-- end needed js libraries -->
 		
 		
 	</head>
 	<body> 
 
-		
+		<div class="popup" id="popup">
+			<div class="dialog">
+				<div class="dialog__close">
+					<div class="btn-close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="dialog__wrap">
+					<div class="dialog__desc">
+						Molimo unesite lozinku:
+					</div>
+
+					<div class="dialog__input">
+						<input type="password" placeholder="Lozinka">
+					</div>
+
+					<div class="dialog__button">
+						<input type="button" class="btn" value="Pošalji">
+					</div>
+				</div><!-- /dialog-wrap -->
+
+			</div>
+		</div><!-- /popup -->
 
 
 		<div class="body-wrap">
 
 			<!-- Top nav -->
 			<section id="top-nav">
-				<div class="section-row">
+				<!--<div class="section-row">-->
 					<div class="container">
 						<div class="logo-wrap">
 
@@ -48,7 +73,8 @@
 								<a href="index.html"><img src="img/interligo-logo.jpg" alt="Interligo"></a>
 							</div>
 
-							<div class="top-nav">
+							<!-- top-nav - desktop -->
+							<div class="top-nav mobile-hide">
 								<ul>
 									<li><a href="index.html">Naslovna</a></li>
 									<li><a href="news.html">Novosti i događanja</a></li>
@@ -56,11 +82,31 @@
 									<li><a href="books.html">Knjige</a></li>
 									<li><a href="#contact">Kontakt</a></li>
 								</ul>
-							</div>
+							</div><!-- /top-nav -->
+
+							<!-- mobile-nav-wrap -->
+							<div class="mobile-nav-wrap desktop-hide mobile-show">
+								<div class="mobile-nav-icon" id="mobile-nav-open">
+									<i class="fa fa-bars" aria-hidden="true"></i>
+								</div>
+								
+								<div class="mobile-nav" id="mobile-nav">
+									<div class="nav-close" id="mobile-nav-close">
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</div>
+									<ul>
+										<li><a href="index.html">Naslovna</a></li>
+										<li><a href="news.html">Novosti i događanja</a></li>
+										<li><a href="counselling.html">Savjetovalište</a></li>
+										<li><a href="books.html">Knjige</a></li>
+										<li><a href="#contact" class="btn-contact">Kontakt</a></li>
+									</ul>
+								</div>
+							</div><!-- mobile-nav-wrap -->
 
 						</div><!-- /logo-wrap -->
 					</div><!-- /container -->
-				</div><!-- /section-row -->
+				<!--</div> /section-row -->
 			</section>
 
 
@@ -118,7 +164,7 @@
                                     </div><!-- /price-row -->
 
                                     <div class="price__desc">
-                                        (dekoracija za fotografiranje … od 500,00 kn/objekt)
+                                        (dekoracija za fotografiranje  ... od 500,00 kn/objekt)
                                     </div>
 
                                     <div class="price__note">
@@ -588,151 +634,168 @@
                             <div class="pricelist">
                                 <h3>Oglašavanje</h3>
 
-                                <!-- 0 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        USLUGA
-                                    </div>
-
-                                    <div class="ads__price">
-                                        CIJENA
-                                    </div>
-                                </div>
 
                                 <!-- 1 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             PRIJAVA APARTMANA NA ON-LINE PORTAL
                                         </div>
 
-                                        <div class="ads__offer--desc">
-                                            Booking.com, Expedia.com, Only-Apartments.com, Holiday-Velvet,…
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        300,00 kn/apartman
-                                        <br>
-                                        Samo Expedia 450,00 kn/apartman
+                                        <div class="price__price">
+                                            300,00 kn/apartman
+                                            <br>
+                                            Samo Expedia 450,00 kn/apartman
+                                        </div>
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
+                                        Booking.com, Expedia.com, Only-Apartments.com, Holiday-Velvet, ...
                                     </div>
                                 </div>
 
                                 <!-- 2 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             PRIJAVA APARTMANA NA ON-LINE PORTAL
                                         </div>
 
-                                        <div class="ads__offer--desc">
-                                            Booking.com, Only-Apartments.com, Holiday-Velvet,…
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        200,00 kn/soba
+                                        <div class="price__price">
+                                            200,00 kn/soba
+                                        </div>
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
+                                        Booking.com, Only-Apartments.com, Holiday-Velvet, ...
                                     </div>
                                 </div>
 
                                 <!-- 3 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             EDUKACIJA VOĐENJA BOOKINGA NA ON-LINE PORTALU
                                         </div>
 
-                                        <div class="ads__offer--desc">
+                                        <div class="price__line">
+                                        </div>
+
+                                        <div class="price__price">
                                             od 1.000,00 kn/portal
                                         </div>
-                                    </div>
+                                    </div><!-- /price__row -->
 
-                                    <div class="ads__price">
-
+                                    <div class="price__desc">
+                                        
                                     </div>
                                 </div>
 
                                 <!-- 4 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             PRIJAVA APARTMANA NA BESPLATNI PORTAL
                                         </div>
 
-                                        <div class="ads__offer--desc">
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        250,00 kn/apartman
+                                        <div class="price__price">
+                                            250,00 kn/apartman
+                                        </div>
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
                                     </div>
                                 </div>
 
                                 <!-- 5 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             PRIJAVA APARTMANA NA BESPLATNI PORTAL
                                         </div>
 
-                                        <div class="ads__offer--desc">
-
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        150,00 kn/soba
+                                        <div class="price__price">
+                                            150,00 kn/soba
+                                        </div>
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
+
                                     </div>
                                 </div>
 
                                 <!-- 6 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
-                                            EDUKACIJA VOĐENJA BOOKINGA NA BESPLATNIM REZERVACIJSKIM SUSTAVIMA i PORTALIMA
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
+                                            EDUKACIJA VOĐENJA BOOKINGA NA BESPLATNIM 
+                                            <br>
+                                            REZERVACIJSKIM SUSTAVIMA i PORTALIMA
                                         </div>
 
-                                        <div class="ads__offer--desc">
-                                            Airbnb, Atraveo, Housetrip,…
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        800,00 kn
+                                        <div class="price__price">
+                                            800,00 kn
+                                        </div>
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
+                                        Airbnb, Atraveo, Housetrip, ...
                                     </div>
                                 </div>
 
                                 <!-- 7 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             PRIJAVA NA PLAĆENI PORTAL
                                         </div>
 
-                                        <div class="ads__offer--desc">
-                                            Plaćeni portal može biti hrvatski ili inozemni. Inozemni portali mogu biti namijenjeni češkom, poljskom, engleskom, njemačkom, talijanskom, ruskom, skandinavskom, američkom,… tržištu. Cijene se kreću od 100,00 kn do 10.000,00 kn po apartmanu.
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        600,00 kn/portal
+                                        <div class="price__price">
+                                            600,00 kn/portal
+                                        </div>
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
+                                        Plaćeni portal može biti hrvatski ili inozemni. Inozemni portali mogu biti namijenjeni češkom, poljskom, engleskom, njemačkom, talijanskom, ruskom, skandinavskom, američkom, ... tržištu. Cijene se kreću od 100,00 kn do 10.000,00 kn po apartmanu.
                                     </div>
                                 </div>
 
                                 <!-- 8 -->
-                                <div class="ads">
-                                    <div class="ads__offer">
-                                        <div class="ads__offer--name">
+                                <div class="price">
+                                    <div class="price__row">
+                                        <div class="price__name">
                                             VOĐENJE OBJEKTA NA TRIP ADVISORU
                                         </div>
 
-                                        <div class="ads__offer--desc">
-                                            (upravljanje komentarima, odgovaranje na kometare, izrada profila,...) 
+                                        <div class="price__line">
                                         </div>
-                                    </div>
 
-                                    <div class="ads__price">
-                                        od 300 kn/mj
+                                        <div class="price__price">
+                                            od 300 kn/mj
+                                        </div>
+
+                                    </div><!-- /price__row -->
+
+                                    <div class="price__desc">
+                                        (upravljanje komentarima, odgovaranje na kometare, izrada profila, ...) 
                                     </div>
                                 </div>
 
@@ -870,7 +933,8 @@
 		</div><!-- /body-wrap -->
 
 
-
+    <!-- SCRIPTS -->
+	<script src="js/script.js"></script>
 
 	</body>
 </html>

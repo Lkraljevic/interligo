@@ -42,6 +42,10 @@ section#book {
   max-width: 960px;
   margin: 0 auto;
 }
+.container-book {
+  max-width: 1340px;
+  margin: 0 auto;
+}
 .section-row {
   width: 100%;
   position: relative;
@@ -65,18 +69,24 @@ h4 {
   font-weight: 100;
   opacity: 0.5;
 }
-.btn,
-margin: 0 auto,
-padding: 5px 20px,
-border: 1px solid colorBlue,
-color: colorBlue,
-background: colorWhite,
-font-size: 14px,
-font-weight: 100,
-transition(.7s),
-:hover,
-background: colorBlue,
-color: colorWhite,
+.btn {
+  margin: 0 auto;
+  padding: 5px 20px;
+  border: 1px solid #32a1d8;
+  color: #32a1d8;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.btn:hover {
+  background: #32a1d8;
+  color: #fff;
+}
 #bookselector {
   text-align: center;
 }
@@ -95,12 +105,11 @@ color: colorWhite,
 #top-nav {
   position: relative;
   width: 100%;
-  min-height: 80px;
   background: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  z-index: 10;
+  z-index: 20;
 }
 #top-nav .logo-wrap {
   display: -webkit-box;
@@ -169,12 +178,73 @@ color: colorWhite,
   -o-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
+.mobile-nav-wrap .mobile-nav-icon,
+.mobile-nav-wrap .nav-close {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: #7e7e88;
+}
+.mobile-nav-wrap .nav-close {
+  margin: 0 30px 0 auto;
+  color: #fff;
+}
+.mobile-nav-wrap .mobile-nav {
+  position: fixed;
+  width: 80%;
+  height: 100vh;
+  top: 0;
+  right: -80%;
+  background: #32a1d8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10% 0 0 15%;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.mobile-nav-wrap .mobile-nav.active {
+  right: 0;
+}
+.mobile-nav-wrap .mobile-nav ul {
+  margin-top: 30px;
+}
+.mobile-nav-wrap .mobile-nav ul li {
+  margin-bottom: 25px;
+}
+.mobile-nav-wrap .mobile-nav ul li a {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+}
 #pf-stage {
   background: #32a1d8 !important;
 }
 #pageflip {
   flex-grow: 1;
   height: 100vh;
+}
+#book {
+  background: #32a1d8;
 }
 .book-wrap {
   display: -webkit-box;
@@ -183,7 +253,6 @@ color: colorWhite,
   display: -ms-flexbox;
   display: flex;
   flex-flow: row nowrap;
-  background: #32a1d8;
 }
 #bookselector {
   display: -webkit-box;
@@ -451,6 +520,66 @@ color: colorWhite,
 #counselling .counselling-wrap {
   padding: 50px 0;
 }
+#counselling .pricelist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 50px;
+/* Price ============ */
+}
+#counselling .pricelist h3 {
+  margin-bottom: 20px;
+}
+#counselling .pricelist .price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 30px;
+}
+#counselling .pricelist .price .price__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+#counselling .pricelist .price .price__row .price__name,
+#counselling .pricelist .price .price__row .price__price {
+  font-size: 14px;
+  font-weight: 400;
+}
+#counselling .pricelist .price .price__row .price__name {
+  color: #40404c;
+  text-transform: uppercase;
+  max-width: 500px;
+}
+#counselling .pricelist .price .price__row .price__line {
+  flex-grow: 1;
+  border-bottom: 1px dotted rgba(126,126,136,0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 20px;
+}
+#counselling .pricelist .price .price__row .price__price {
+  color: #32a1d8;
+  width: 200px;
+  text-align: left;
+}
+#counselling .pricelist .price__desc,
+#counselling .pricelist .price__note {
+  font-size: 12px;
+  color: #7e7e88;
+  width: 60%;
+}
 #books .books-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -519,12 +648,13 @@ color: colorWhite,
 #books .books-wrap .books-item .books-item__img.magazine3 {
   background: url("../img/books/split2016.png") no-repeat bottom;
 }
-#books .books-wrap .books-item .books-item__price {
+#books .books-wrap .books-item .books-item__name {
+  text-align: center;
   font-size: 14px;
   font-weight: 400;
   color: #32a1d8;
 }
-#books .books-wrap .books-item .books-item__price.old {
+#books .books-wrap .books-item .books-item__name.old {
   color: #d0011b;
   font-size: 10px;
   text-decoration: line-through;
@@ -679,6 +809,7 @@ color: colorWhite,
   display: -ms-flexbox;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 #contact .contact-bot .copyright-wrap .social {
   display: -webkit-box;
@@ -712,15 +843,18 @@ color: colorWhite,
   left: 0;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  display: none;
+}
+.popup.active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.6);
-  z-index: 100;
 }
 .popup .dialog {
   background: #fff;
@@ -803,5 +937,5 @@ input {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
