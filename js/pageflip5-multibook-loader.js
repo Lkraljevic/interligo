@@ -1,5 +1,42 @@
 var startPageflip;
 
+var unlock;
+
+function showPasswordDialog() {
+	var el = document.getElementById('popup');
+	el.classList.remove('hide');
+}
+
+function hidePasswordDialog() {
+	var el = document.getElementById('popup');
+	el.classList.add('hide');
+	var input = document.getElementById('password');
+	input.value = '';
+}
+
+function submitPassword() {
+	var input = document.getElementById('password');
+	var error = document.getElementById('error');
+	var v = validate(input.value);
+	if(v) {
+		error.innerHTML = v;
+	} else {
+		error.innerHTML = '';
+		hidePasswordDialog();
+	}
+}
+
+function validate(value) {
+	if(value == 'a0217') {
+		document.cookie = "unlock=a0217";
+		unlock();
+		startPageflip('apartman_plus_02_2017_web', true);
+		return false
+	}
+	else
+		return 'Kriva lozinka!'
+}
+
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -23,169 +60,53 @@ $( function() {
 		/* Book configurations, each is an object, with the book id as identifier */
 		bookConfig = {
 				/* book ID - used as CSS class name */
-			meetpageflip: {
-				/* Configuration options */
-					PageDataFile: "books/template1_meet_pageflip/meetpageflip.html",
-					PageWidth: 450,
-					PageHeight: 600,
-					FullScreenEnabled: true,
-					Transparency: true,
-					Margin: 32,
-					MarginBottom: 64,
-					AutoScale: true,
-					//FullScale: true,
-					AlwaysOpened: false,
-					AutoFlipLoop: -1,
-					CenterSinglePage: true,
-					DropShadowOpacity: 0.3,
-					FlipTopShadowOpacity: 0.2,
-					FlipShadowOpacity: 0.2,
-					HardFlipOpacity: 0.3,
-					EmbossOpacity: 0.2,
-					SecondaryDragArea: 32,
-					Transparency: true,
-					ControlbarFile: "common/controlbar_svg.html",
-					GoogleAnalytics: true,
-					HashControl: true,
-					ShareLink: "http://pageflip-books.com",
-					ShareText: "Pageflip5, The Book Template for the Web",
-					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "http://pageflip-books.com/images/shareimage.jpg",
-					ShowCopyright: false,
-					Copyright: Key.Copyright,
-					Key: Key.Key
-				},
-			demo2: {
-					/* Configuration options */
-					PageDataFile: "books/template2_demobook2/demobook2.html",
-					PageWidth: 434,
-					PageHeight: 568,
-					HardPages: true,
-					FullScreenEnabled: true,
-					Transparency: true,
-					Margin: 0,
-					AutoScale: true,
-					//FullScale: true,
-					FlexibleContent: true,
-					StartPage: 1,
-					AutoFlipLoop: -1,
-					Thumbnails: true,
-					ThumbnailsToFront: true,
-					ThumbnailsAutoHide: 5000,
-					ThumbnailsHidden: true,
-					ThumbnailAlwaysCentered: true,
-					ThumbnailWidth: 104,
-					ThumbnailHeight: 120,
-					ControlbarFile: "common/controlbar_svg.html",
-					ControlbarToFront: true,
-					Preflip: false,
-					HashControl: true,
-					ShareLink: "http://pageflip-books.com",
-					ShareText: "Pageflip5, The Book Template for the Web",
-					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "http://pageflip-books.com/images/shareimage2.jpg",
-					Copyright: Key.Copyright,
-					Key: Key.Key
-				},
-			book: {
-					/* Configuration options */
-					PageDataFile: "books/template3_empty/book.html",
-					PageWidth: 400,
-					PageHeight: 500,
-					FullScreenEnabled: true,
-					Margin: 34,
-					MarginBottom: 64,
-					AutoScale: true,
-					AutoStageHeight: true,
-					StartPage: 1,
-					AutoFlipLoop: -1,
-					ControlbarFile: "common/controlbar_svg.html",
-					ControlbarToFront: true,
-					HashControl: true,
-					ShareLink: "http://pageflip-books.com",
-					ShareText: "Pageflip5, The Book Template for the Web",
-					ShareVia: "@MaccPageFlip",
-					ShareImageURL: "http://pageflip-books.com/images/shareimage2.jpg",
-					Copyright: Key.Copyright,
-					Key: Key.Key
-				},
-			casopis: {
-					/* Configuration options */
-					PageDataFile: "books/casopis/casopis.html",
-					PageWidth: 450,
-					PageHeight: 600,
-					FullScreenEnabled: true,
-					Transparency: true,
-					Margin: 32,
-					MarginBottom: 64,
-					AutoScale: true,
-					//FullScale: true,
-					AlwaysOpened: false,
-					AutoFlipLoop: -1,
-					CenterSinglePage: true,
-					DropShadowOpacity: 0.3,
-					FlipTopShadowOpacity: 0.2,
-					FlipShadowOpacity: 0.2,
-					HardFlipOpacity: 0.3,
-					EmbossOpacity: 0.2,
-					SecondaryDragArea: 32,
-					Transparency: true,
-					ControlbarFile: "common/controlbar_svg.html",
-					GoogleAnalytics: true,
-					HashControl: true,
-					ShowCopyright: false,
-					Copyright: Key.Copyright,
-					Key: Key.Key
-				},
-			casopis1: {
-					PageDataFile: (getCookie("unlock") == '0702')?"books/casopis1/index.html":"books/casopis/casopis.html",
-					PageWidth: 600,
-					PageHeight: 800,
-					Margin: 32,
-					MarginBottom: 64,
-					PerformanceAware: false,
-					AutoScale: true,
-					//FullScale: true,
-					HardCover: true,
-					HardPages: false,
-					RightToLeft: false,
-					VerticalMode: false,
-					AlwaysOpened: false,
-					AutoFlipEnabled: false,
-					StartAutoFlip: false,
-					AutoFlipLoop: -1,
-					DropShadow: true,
-					NoFlipShadow: false,
-					Emboss: true,
-					DropShadowOpacity: 0.2,
-					FlipTopShadowOpacity: 0.2,
-					FlipShadowOpacity: 0.2,
-					HardFlipOpacity: 0.2,
-					EmbossOpacity: 0.2,
-					HashControl: true,
-					PageCache: 5,
-					MouseControl: true,
-					HotKeys: true,
-					ControlbarFile: "common/controlbar_svg.html",
-					ControlbarToFront: false,
-					FullScreenEnabled: true,
-					ShareLink: window.location.href,
-					ShareText: 'Interligo',
-					ShareVia: '@Interligo',
-					ShareImageURL: 'page0.jpg',
-					DisableSelection: true,
-					CenterSinglePage: true,
-					SinglePageMode: false,
-					ShowCopyright: false,
-					//Copyright: '©Interligo2017 ',
-					//Key: 'XGDCWcVcHA1yksRaYzDv'
-					Copyright: Key.Copyright,
-					Key: Key.Key
-				}
-			
-
+			apartman_plus_02_2017_web: {
+				PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
+				PageWidth: 734,
+				PageHeight: 980,
+				Margin: 32,
+				MarginBottom: 64,
+				PerformanceAware: false,
+				AutoScale: true,
+				//FullScale: true,
+				HardCover: true,
+				HardPages: false,
+				RightToLeft: false,
+				VerticalMode: false,
+				AlwaysOpened: false,
+				AutoFlipEnabled: false,
+				StartAutoFlip: false,
+				AutoFlipLoop: -1,
+				DropShadow: true,
+				NoFlipShadow: false,
+				Emboss: true,
+				DropShadowOpacity: 0.2,
+				FlipTopShadowOpacity: 0.2,
+				FlipShadowOpacity: 0.2,
+				HardFlipOpacity: 0.2,
+				EmbossOpacity: 0.2,
+				HashControl: true,
+				PageCache: 5,
+				MouseControl: true,
+				HotKeys: true,
+				ControlbarFile: "common/controlbar_svg.html",
+				ControlbarToFront: false,
+				FullScreenEnabled: true,
+				ShareLink: window.location.href,
+				ShareText: 'Interligo',
+				ShareVia: '@Interligo',
+				ShareImageURL: 'page0.jpg',
+				DisableSelection: true,
+				CenterSinglePage: true,
+				SinglePageMode: false,
+				ShowCopyright: false,
+				//Copyright: '©Interligo2017 ',
+				//Key: 'XGDCWcVcHA1yksRaYzDv'
+				Copyright: '©Interligo2017 ',
+				Key: 'lWyjKrQVvPXf9GMTMOiN'
+			}
 		},
-		defaultID = "casopis1",	//"demo1",
+		defaultID = "apartman_plus_02_2017_web",	//"demo1",
 		startID = defaultID,
 		loadedID,
 		closing,
@@ -217,6 +138,57 @@ $( function() {
 			window.pageflip = pageflip;
 		}
 	};
+	
+	unlock = function() {
+		bookConfig = {
+				/* book ID - used as CSS class name */
+			apartman_plus_02_2017_web: {
+				PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
+				PageWidth: 734,
+				PageHeight: 980,
+				Margin: 32,
+				MarginBottom: 64,
+				PerformanceAware: false,
+				AutoScale: true,
+				//FullScale: true,
+				HardCover: true,
+				HardPages: false,
+				RightToLeft: false,
+				VerticalMode: false,
+				AlwaysOpened: false,
+				AutoFlipEnabled: false,
+				StartAutoFlip: false,
+				AutoFlipLoop: -1,
+				DropShadow: true,
+				NoFlipShadow: false,
+				Emboss: true,
+				DropShadowOpacity: 0.2,
+				FlipTopShadowOpacity: 0.2,
+				FlipShadowOpacity: 0.2,
+				HardFlipOpacity: 0.2,
+				EmbossOpacity: 0.2,
+				HashControl: true,
+				PageCache: 5,
+				MouseControl: true,
+				HotKeys: true,
+				ControlbarFile: "common/controlbar_svg.html",
+				ControlbarToFront: false,
+				FullScreenEnabled: true,
+				ShareLink: window.location.href,
+				ShareText: 'Interligo',
+				ShareVia: '@Interligo',
+				ShareImageURL: 'page0.jpg',
+				DisableSelection: true,
+				CenterSinglePage: true,
+				SinglePageMode: false,
+				ShowCopyright: false,
+				//Copyright: '©Interligo2017 ',
+				//Key: 'XGDCWcVcHA1yksRaYzDv'
+				Copyright: '©Interligo2017 ',
+				Key: 'lWyjKrQVvPXf9GMTMOiN'
+			}
+		}
+	}
 	
 	if( bookConfig[id] && defaultID!=id ) {  startID = id; } 
 	else { 

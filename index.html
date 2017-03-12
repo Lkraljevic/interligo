@@ -60,10 +60,10 @@
 	</head>
 	<body> 
 
-		<div class="popup hide">
+		<div id="popup" class="popup hide">
 			<div class="dialog">
 				<div class="dialog__close">
-					<div class="btn-close">
+					<div class="btn-close" onClick="hidePasswordDialog();" >
 						<i class="fa fa-times" aria-hidden="true"></i>
 					</div>
 				</div>
@@ -73,11 +73,12 @@
 					</div>
 
 					<div class="dialog__input">
-						<input type="password" placeholder="Lozinka">
+						<label id="error" for="password"> </label>
+						<input type="input" placeholder="Lozinka" id="password">
 					</div>
 
 					<div class="dialog__button">
-						<input type="button" class="btn" value="Pošalji">
+						<input type="button" class="btn" value="Pošalji" onClick="submitPassword();" >
 					</div>
 				</div><!-- /dialog-wrap -->
 
@@ -139,12 +140,12 @@
 
 
 							<ul class="shelf">
-								<li onClick="startPageflip('meetpageflip');" class="book1"></li>
-								<li onClick="startPageflip('demo2');" class="book2"></li>
+								<li class="book1"></li>
+								<li class="book2"></li>
 							</ul>
 							<ul class="shelf">
-								<li onClick="startPageflip('casopis1');" class="book3"></li>
-								<li onClick="startPageflip('casopis');" class="book4"></li>
+								<li class="book3"></li>
+								<li class="book4"></li>
 							</ul>
 						</div> 
 					
