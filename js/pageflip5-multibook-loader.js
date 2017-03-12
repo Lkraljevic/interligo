@@ -196,6 +196,9 @@ $( function() {
 			gotoAnchor( "#"+id ); 
 	}
 
-	startPageflip( startID );
+	startPageflip( startID ); 
+	
+	if(getCookie("unlock") == 'a0217')
+		document.body.classList.add('unlock');
 
 });
