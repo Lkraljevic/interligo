@@ -4,12 +4,12 @@ var unlock;
 
 function showPasswordDialog() {
 	var el = document.getElementById('popup');
-	el.classList.remove('hide');
+	el.classList.add('active');
 }
 
 function hidePasswordDialog() {
 	var el = document.getElementById('popup');
-	el.classList.add('hide');
+	el.classList.remove('active');
 	var input = document.getElementById('password');
 	input.value = '';
 }
