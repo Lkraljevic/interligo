@@ -5,3 +5,25 @@
 .unlock #b-download {
   display: inherit;
 }
+
+
+#b-unlock {
+  margin-top: 2px;
+  display: inherit;
+  width: 22px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+#b-unlock:hover {
+  color: #FA0;
+}
+.unlock #b-unlock {
+  display: none;
+}
+
+@media only screen and (max-width: 961px), only screen and (max-device-width: 961px) {
+  #b-unlock {
+    display: block;
+  }
+}
