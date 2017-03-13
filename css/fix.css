@@ -1,0 +1,6 @@
+#b-download {
+  display: none;
+}
+.unlock #b-download {
+  display: inherit;
+}
