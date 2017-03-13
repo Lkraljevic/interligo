@@ -1,6 +1,7 @@
 var startPageflip;
 
 var unlock;
+var downloadPDF;
 
 function showPasswordDialog() {
 	var el = document.getElementById('popup');
@@ -55,15 +56,13 @@ function getCookie(cname) {
 
 $( function() {
 	var $pageflip = $("#pageflip"),
-	$downloadLink = $("#b-download");
 		pageflip,
-		
 		/* Book configurations, each is an object, with the book id as identifier */
 		bookConfig = {
 				/* book ID - used as CSS class name */
 			apartman_plus_02_2017_web: {
 				PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
-				DownloadLink: 'books/apartman-plus-02-2017_web/apartman-plus-02-2017.pdf',
+				DownloadLink: 'books/apartman-plus-02-2017_web/Apartman-plus-02-2017.pdf',
 				PageWidth: 734,
 				PageHeight: 980,
 				Margin: 32,
@@ -138,9 +137,11 @@ $( function() {
 			$pageflip.pageflipInit( bookConfig[id], id );
 			pageflip = $pageflip.pageflip();
 			window.pageflip = pageflip;
-			$downloadLink.on('click', function() {
-				console.log(bookConfig[id].DownloadLink);
-			});
+			downloadPDF = function() {
+				var $downloadLink = $("#b-download");
+				window.open(bookConfig[id].DownloadLink, '_blank');
+
+			}
 		}
 	};
 	
@@ -149,6 +150,7 @@ $( function() {
 		/* book ID - used as CSS class name */
 	apartman_plus_02_2017_web: {
 		PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
+		DownloadLink: 'books/apartman-plus-02-2017_web/Apartman-plus-02-2017.pdf',
 		PageWidth: 734,
 		PageHeight: 980,
 		Margin: 32,
