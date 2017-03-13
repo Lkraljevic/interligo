@@ -100,7 +100,7 @@ $( function() {
 				PageCache: 5,
 				MouseControl: true,
 				HotKeys: true,
-				ControlbarFile: "common/controlbar_svg.html",
+				ControlbarFile: (getCookie("unlock") == 'a0217')?"common/controlbar_svg.html":"common/controlbar_locked_svg.html",
 				ControlbarToFront: false,
 				FullScreenEnabled: true,
 				ShareLink: window.location.href,
