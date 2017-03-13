@@ -102,8 +102,8 @@ $( function() {
 				ShowCopyright: false,
 				//Copyright: '©Interligo2017 ',
 				//Key: 'XGDCWcVcHA1yksRaYzDv'
-				Copyright: '©Interligo2017 ',
-				Key: 'lWyjKrQVvPXf9GMTMOiN'
+				Copyright: Key.Copyright,
+				Key: Key.Key
 			}
 		},
 		defaultID = "apartman_plus_02_2017_web",	//"demo1",
