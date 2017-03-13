@@ -1,7 +1,6 @@
 var startPageflip;
-
 var unlock;
-var downloadPDF;
+var bindDownload;
 
 function showPasswordDialog() {
 	var el = document.getElementById('popup');
@@ -134,13 +133,15 @@ $( function() {
 			var h = getHashID();
 			if( ( defaultID==id && h && h!=id ) || ( defaultID!=id && h!=id ) ) 
 				location.hash = id;
+			
 			$pageflip.pageflipInit( bookConfig[id], id );
 			pageflip = $pageflip.pageflip();
 			window.pageflip = pageflip;
-			downloadPDF = function() {
-				var $downloadLink = $("#b-download");
-				window.open(bookConfig[id].DownloadLink, '_blank');
-
+			bindDownload = function() {
+				var downloadLink = document.getElementById('b-download');
+				console.log(bookConfig[id].DownloadLink);
+				downloadLink.onclick=function(){window.open(bookConfig[id].DownloadLink);}
+				downloadLink.ontouchstart=function(){window.open(bookConfig[id].DownloadLink);}
 			}
 		}
 	};
