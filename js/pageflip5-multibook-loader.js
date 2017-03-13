@@ -99,6 +99,8 @@ $( function() {
 				HashControl: true,
 				PageCache: 5,
 				MouseControl: true,
+				ClickZoom: true,
+				PinchZoom: true,
 				HotKeys: true,
 				ControlbarFile: (getCookie("unlock") == 'a0217')?"common/controlbar_svg.html":"common/controlbar_locked_svg.html",
 				ControlbarToFront: false,
