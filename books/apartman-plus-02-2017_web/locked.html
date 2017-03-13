@@ -9,16 +9,24 @@
 			<div class='page' data-background-file='books/apartman-plus-02-2017_web/page7.jpg' data-page-label='t7'></div>
       <div class='page' data-background-file='books/apartman-plus-02-2017_web/page8.jpg' data-page-label='t8'></div>
 			<div class='page' data-background-file='books/apartman-plus-02-2017_web/page9.jpg' data-page-label='t9'></div>
+
 			<div class="page">
         <div class="last-page" style="background-image:url('books/apartman-plus-02-2017_web/page10.jpg')">
-          <div class="last-page-wrap">
-            <p>
-              Za nastavak, molimo Vas prijavite se na link ispod
-            </p>
-            <input type="button" value="Prijava" class="btn" onClick="showPasswordDialog();" >
-          </div><!-- /last-page-wrap -->
-        </div><!-- /last-page -->
+					<div class="last-page-wrap">
+						<p>
+							Ovo je prvi probni besplatni broj časopisa "Apartman Plus", za nastavak čitanja upišite: <b>a0217</b>
+						</p>
+						<input type="button" value="Prijava" class="btn" id="popup-open" ontouchstart="showPasswordDialog" onClick="showPasswordDialog();" >
+						<p>
+							U slijedećim brojevima za nastavak čitanja časopisa "Apartman Plus" upišite šifru koju ste dobili uplatom godišnje pretplate na časopis "Apartman Plus" ili putem vaše turističke zajednice.
+						</p>
+					</div><!-- /last-page-wrap -->
+				</div><!-- /last-page -->
       </div>
+			<script>
+				x = document.getElementById('popup-open');
+				
+			</script>
 <!--
 			<div class='page' data-background-file='books/apartman-plus-02-2017_web/page10.jpg' data-page-label='t10'></div>
 			<div class='page' data-background-file='books/apartman-plus-02-2017_web/page11.jpg' data-page-label='t11'></div>
