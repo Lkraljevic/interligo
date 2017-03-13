@@ -55,6 +55,7 @@ function getCookie(cname) {
 
 $( function() {
 	var $pageflip = $("#pageflip"),
+	$downloadLink = $("#b-download");
 		pageflip,
 		
 		/* Book configurations, each is an object, with the book id as identifier */
@@ -62,6 +63,7 @@ $( function() {
 				/* book ID - used as CSS class name */
 			apartman_plus_02_2017_web: {
 				PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
+				DownloadLink: 'books/apartman-plus-02-2017_web/apartman-plus-02-2017.pdf',
 				PageWidth: 734,
 				PageHeight: 980,
 				Margin: 32,
@@ -136,58 +138,62 @@ $( function() {
 			$pageflip.pageflipInit( bookConfig[id], id );
 			pageflip = $pageflip.pageflip();
 			window.pageflip = pageflip;
+			$downloadLink.on('click', function() {
+				console.log(bookConfig[id].DownloadLink);
+			});
 		}
 	};
 	
 	unlock = function() {
-				bookConfig = {
-				/* book ID - used as CSS class name */
-			apartman_plus_02_2017_web: {
-				PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
-				PageWidth: 734,
-				PageHeight: 980,
-				Margin: 32,
-				MarginBottom: 64,
-				PerformanceAware: false,
-				AutoScale: true,
-				//FullScale: true,
-				HardCover: true,
-				HardPages: false,
-				RightToLeft: false,
-				VerticalMode: false,
-				AlwaysOpened: false,
-				AutoFlipEnabled: false,
-				StartAutoFlip: false,
-				AutoFlipLoop: -1,
-				DropShadow: true,
-				NoFlipShadow: false,
-				Emboss: true,
-				DropShadowOpacity: 0.2,
-				FlipTopShadowOpacity: 0.2,
-				FlipShadowOpacity: 0.2,
-				HardFlipOpacity: 0.2,
-				EmbossOpacity: 0.2,
-				HashControl: true,
-				PageCache: 5,
-				MouseControl: true,
-				HotKeys: true,
-				ControlbarFile: "common/controlbar_svg.html",
-				ControlbarToFront: false,
-				FullScreenEnabled: true,
-				ShareLink: window.location.href,
-				ShareText: 'Interligo',
-				ShareVia: '@Interligo',
-				ShareImageURL: 'page0.jpg',
-				DisableSelection: true,
-				CenterSinglePage: true,
-				SinglePageMode: false,
-				ShowCopyright: false,
-				//Copyright: '©Interligo2017 ',
-				//Key: 'XGDCWcVcHA1yksRaYzDv'
-				Copyright: Key.Copyright,
-				Key: Key.Key
-			}
-		}
+		bookConfig = {
+		/* book ID - used as CSS class name */
+	apartman_plus_02_2017_web: {
+		PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
+		PageWidth: 734,
+		PageHeight: 980,
+		Margin: 32,
+		MarginBottom: 64,
+		PerformanceAware: false,
+		AutoScale: true,
+		//FullScale: true,
+		HardCover: true,
+		HardPages: false,
+		RightToLeft: false,
+		VerticalMode: false,
+		AlwaysOpened: false,
+		AutoFlipEnabled: false,
+		StartAutoFlip: false,
+		AutoFlipLoop: -1,
+		DropShadow: true,
+		NoFlipShadow: false,
+		Emboss: true,
+		DropShadowOpacity: 0.2,
+		FlipTopShadowOpacity: 0.2,
+		FlipShadowOpacity: 0.2,
+		HardFlipOpacity: 0.2,
+		EmbossOpacity: 0.2,
+		HashControl: true,
+		PageCache: 5,
+		MouseControl: true,
+		HotKeys: true,
+		ControlbarFile: "common/controlbar_svg.html",
+		ControlbarToFront: false,
+		FullScreenEnabled: true,
+		ShareLink: window.location.href,
+		ShareText: 'Interligo',
+		ShareVia: '@Interligo',
+		ShareImageURL: 'page0.jpg',
+		DisableSelection: true,
+		CenterSinglePage: true,
+		SinglePageMode: false,
+		ShowCopyright: false,
+		//Copyright: '©Interligo2017 ',
+		//Key: 'XGDCWcVcHA1yksRaYzDv'
+		Copyright: Key.Copyright,
+		Key: Key.Key
+	}
+};
+		document.body.classList.add('unlock');	
 	}
 	
 	if( bookConfig[id] && defaultID!=id ) {  startID = id; } 
@@ -199,6 +205,6 @@ $( function() {
 	startPageflip( startID ); 
 	
 	if(getCookie("unlock") == 'a0217')
-		document.body.classList.add('unlock');
+		unlock();
 
 });
