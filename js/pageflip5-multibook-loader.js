@@ -140,7 +140,7 @@ $( function() {
 	};
 	
 	unlock = function() {
-		bookConfig = {
+				bookConfig = {
 				/* book ID - used as CSS class name */
 			apartman_plus_02_2017_web: {
 				PageDataFile: (getCookie("unlock") == 'a0217')?"books/apartman-plus-02-2017_web/index.html":"books/apartman-plus-02-2017_web/locked.html",
@@ -184,8 +184,8 @@ $( function() {
 				ShowCopyright: false,
 				//Copyright: '©Interligo2017 ',
 				//Key: 'XGDCWcVcHA1yksRaYzDv'
-				Copyright: '©Interligo2017 ',
-				Key: 'lWyjKrQVvPXf9GMTMOiN'
+				Copyright: Key.Copyright,
+				Key: Key.Key
 			}
 		}
 	}
