@@ -1,951 +1,1036 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="description" content="Pružamo usluge savjetovanja o oglašavanju vaših apartmana i kuća za odmor, marketingu, promociji, uređenju, prezentaciji, vođenju,...">
-		<meta name="author" content="Luka Horvatić, horvaticluka@gmail.com; Luka Kraljević, luka.kraljevic90@gmail.com">
-		<meta name="keywords" content="Interligo, Books, knjige, Brač, Split, Brac, counselling, turizam, oglašavanje, obiteljski smještaj, gdje se oglasiti, PDV za male iznajmljivače, booking.com">
-		<meta http-equiv="content-type" content="text/html;charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-		<title>Interligo - Savjetovalište</title>
-
-		<!-- start custom fonts -->
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fauna+One">
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Syncopate:400,700">
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,700">
-		<!-- end custom fonts -->
-		
-		<!-- start needed css style files -->
-		<link type="text/css" rel="stylesheet" href="../css/main.css">	        
-		<!--<link type="text/css" rel="stylesheet" href="css/pageflip.css">-->
-		<link type="text/css" rel="stylesheet" href="../css/query.css">
-		<!--<link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">	-->
-		<!-- end needed css style files -->
-
-		<!-- start font-awesome -->
-		<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
-		<!-- end font-awesome -->
-
-		<!-- start needed js libraries -->
-		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>	
-		<!--<script type="text/javascript" src="js/pageflip5-min.js"></script>-->
-		<!--<script type="text/javascript" src="js/key.js"></script>-->
-		<!--<script type="text/javascript" src="js/pageflip5-multibook-loader.js"></script>-->
-		<!-- end needed js libraries -->
-		
-		
-	</head>
-	<body> 
-
-		<div class="popup" id="popup">
-			<div class="dialog">
-				<div class="dialog__close">
-					<div class="btn-close">
-						<i class="fa fa-times" aria-hidden="true"></i>
-					</div>
-				</div>
-				<div class="dialog__wrap">
-					<div class="dialog__desc">
-						Molimo unesite lozinku:
-					</div>
-
-					<div class="dialog__input">
-						<input type="password" placeholder="Lozinka">
-					</div>
-
-					<div class="dialog__button">
-						<input type="button" class="btn" value="Pošalji">
-					</div>
-				</div><!-- /dialog-wrap -->
-
-			</div>
-		</div><!-- /popup -->
-
-
-		<div class="body-wrap">
-
-			<!-- Top nav -->
-			<section id="top-nav">
-				<!--<div class="section-row">-->
-					<div class="container">
-						<div class="logo-wrap">
-
-							<div class="company-logo">
-								<a href="../"><img src="../img/interligo-logo.jpg" alt="Interligo"></a>
-							</div>
-
-							<!-- top-nav - desktop -->
-							<div class="top-nav mobile-hide">
-								<ul>
-									<li><a href="../">Naslovna</a></li>
-									<li><a href="../novosti/">Novosti i događanja</a></li>
-									<li><a href="../savjetovaliste/" class="active">Savjetovalište</a></li>
-									<li><a href="../knjige/">Knjige</a></li>
-									<li><a href="#contact">Kontakt</a></li>
-								</ul>
-							</div><!-- /top-nav -->
-
-							<!-- mobile-nav-wrap -->
-							<div class="mobile-nav-wrap desktop-hide mobile-show">
-								<div class="mobile-nav-icon" id="mobile-nav-open">
-									<i class="fa fa-bars" aria-hidden="true"></i>
-								</div>
-								
-								<div class="mobile-nav" id="mobile-nav">
-									<div class="nav-close" id="mobile-nav-close">
-										<i class="fa fa-times" aria-hidden="true"></i>
-									</div>
-									<ul>
-										<li><a href="../">Naslovna</a></li>
-										<li><a href="../novosti/">Novosti i događanja</a></li>
-										<li><a href="../savjetovaliste/">Savjetovalište</a></li>
-										<li><a href="../knjige/">Knjige</a></li>
-										<li><a href="#contact" class="btn-contact">Kontakt</a></li>
-									</ul>
-								</div>
-							</div><!-- mobile-nav-wrap -->
 
-						</div><!-- /logo-wrap -->
-					</div><!-- /container -->
-				<!--</div> /section-row -->
-			</section>
+<head>
+  <meta name="description" content="Pružamo usluge savjetovanja o oglašavanju vaših apartmana i kuća za odmor, marketingu, promociji, uređenju, prezentaciji, vođenju,...">
+  <meta name="author" content="Luka Horvatić, horvaticluka@gmail.com; Luka Kraljević, luka.kraljevic90@gmail.com">
+  <meta name="keywords" content="Interligo, Books, knjige, Brač, Split, Brac, counselling, turizam, oglašavanje, obiteljski smještaj, gdje se oglasiti, PDV za male iznajmljivače, booking.com">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Interligo - Savjetovalište</title>
+
+  <!-- start custom fonts -->
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fauna+One">
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Syncopate:400,700">
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,700">
+  <!-- end custom fonts -->
+
+  <!-- start needed css style files -->
+  <link type="text/css" rel="stylesheet" href="../css/main.css">
+  <!--<link type="text/css" rel="stylesheet" href="css/pageflip.css">-->
+  <link type="text/css" rel="stylesheet" href="../css/query.css">
+  <!--<link type="text/css" rel="stylesheet" href="css/pageflip-custom.css">    -->
+  <!-- end needed css style files -->
+
+  <!-- start font-awesome -->
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- end font-awesome -->
+
+  <!-- start needed js libraries -->
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <!--<script type="text/javascript" src="js/pageflip5-min.js"></script>-->
+  <!--<script type="text/javascript" src="js/key.js"></script>-->
+  <!--<script type="text/javascript" src="js/pageflip5-multibook-loader.js"></script>-->
+  <!-- end needed js libraries -->
+
+
+</head>
+
+<body>
+
+  <div class="popup" id="popup">
+    <div class="dialog">
+      <div class="dialog__close">
+        <div class="btn-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="dialog__wrap">
+        <div class="dialog__desc">
+          Molimo unesite lozinku:
+        </div>
+
+        <div class="dialog__input">
+          <input type="password" placeholder="Lozinka">
+        </div>
+
+        <div class="dialog__button">
+          <input type="button" class="btn" value="Pošalji">
+        </div>
+      </div>
+      <!-- /dialog-wrap -->
+
+    </div>
+  </div>
+  <!-- /popup -->
+
+
+  <div class="body-wrap">
+
+    <!-- Top nav -->
+    <section id="top-nav">
+      <!--<div class="section-row">-->
+      <div class="container">
+        <div class="logo-wrap">
+
+          <div class="company-logo">
+            <a href="../"><img src="../img/interligo-logo.jpg" alt="Interligo">
+            </a>
+          </div>
+
+          <!-- top-nav - desktop -->
+          <div class="top-nav mobile-hide">
+            <ul>
+              <li><a href="../">Naslovna</a>
+              </li>
+              <li><a href="../novosti/">Novosti i događanja</a>
+              </li>
+              <li><a href="../savjetovaliste/" class="active">Savjetovalište</a>
+              </li>
+              <li><a href="../knjige/">Knjige</a>
+              </li>
+              <li><a href="#contact">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /top-nav -->
+
+          <!-- mobile-nav-wrap -->
+          <div class="mobile-nav-wrap desktop-hide mobile-show">
+            <div class="mobile-nav-icon" id="mobile-nav-open">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+            <div class="mobile-nav" id="mobile-nav">
+              <div class="nav-close" id="mobile-nav-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+              <ul>
+                <li><a href="../">Naslovna</a>
+                </li>
+                <li><a href="../novosti/">Novosti i događanja</a>
+                </li>
+                <li><a href="../savjetovaliste/">Savjetovalište</a>
+                </li>
+                <li><a href="../knjige/">Knjige</a>
+                </li>
+                <li><a href="#contact" class="btn-contact">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- mobile-nav-wrap -->
 
+        </div>
+        <!-- /logo-wrap -->
+      </div>
+      <!-- /container -->
+      <!--</div> /section-row -->
+    </section>
 
 
 
-			<!-- counselling -->
-			<section id="counselling" class="section">
-				<div class="section-row">
-					<div class="container">
 
-                        <div class="counselling-wrap">
+    <!-- counselling -->
+    <section id="counselling" class="section">
+      <div class="section-row">
+        <div class="container">
 
-                            <div class="pricelist">
+          <div class="counselling-wrap">
+
+            <div class="pricelist">
 
-                                <h3>Cjenik usluga</h3>
+              <h3>Cjenik usluga</h3>
 
-                                <!-- 1 -->
-                                <div class="price">
+              <!-- 1 -->
+              <div class="price">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            MARKETINŠKI PLAN APARTMANA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            1.500,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__row">
+                  <div class="price__name">
+                    MARKETINŠKI PLAN APARTMANA
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__desc">
+                  </div>
+                  <div class="price__price">
+                    1.500,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    </div>
+                <div class="price__desc">
 
-                                    <div class="price__note">
-                                        Saznajte kako prezentirati apartman i gdje se oglasiti da bi vaši apartmani imali optimalnu popunjenost – detaljan opis prezentacije i popis najboljih portala za oglašavanje s obzirom na lokaciju, kategoriju, veličinu i ponudu vaših apartmana sa kompletnim izračunom cijena.
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+                <div class="price__note">
+                  Saznajte kako prezentirati apartman i gdje se oglasiti kako bi vaši apartmani imali optimalnu popunjenost. Detaljan opis prezentacije i popis najboljih portala za oglašavanje s obzirom na lokaciju, kategoriju, veličinu i ponudu vaših apartmana s kompletnim izračunom cijena.
+                </div>
+
+              </div>
+              <!-- /price -->
 
-                                <!-- 2 -->
-                                <div class="price">
+              <!-- 2 -->
+              <div class="price">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            FOTO PREZENTACIJA APARTMANA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            od 300,00 kn/apartman
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__row">
+                  <div class="price__name">
+                    FOTO PREZENTACIJA APARTMANA
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__desc">
-                                        (dekoracija za fotografiranje  ... od 500,00 kn/objekt)
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    od 300,00 kn/apartman
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__note">
+                <div class="price__desc">
+                  (dekoracija za fotografiranje ... od 500,00 kn/objekt)
+                </div>
 
-                                    </div>
+                <div class="price__note">
 
-                                </div><!-- /price -->
+                </div>
 
-                                <!-- 3 -->
-                                <div class="price">
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            VIDEO PREZENTACIJA APARTMANA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            4.000,00 kn/objekt
-                                        </div>
-                                    </div><!-- /price-row -->
+              <!-- 3 -->
+              <div class="price">
 
-                                    <div class="price__desc">
+                <div class="price__row">
+                  <div class="price__name">
+                    VIDEO PREZENTACIJA APARTMANA
+                  </div>
+                  <div class="price__line">
 
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    4.000,00 kn/objekt
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__note">
+                <div class="price__desc">
 
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+                <div class="price__note">
 
-                                <!-- 4 -->
-                                <div class="price">
+                </div>
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            IZRADA PREZENTACIJSKOG CD-a
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            200,00 kn (5 kom)
-                                        </div>
-                                    </div><!-- /price-row -->
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__desc">
+              <!-- 4 -->
+              <div class="price">
 
-                                    </div>
+                <div class="price__row">
+                  <div class="price__name">
+                    IZRADA PREZENTACIJSKOG CD-a
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__note">
-                                        Izrada CD na kojem će biti fotografije, opisi i cijene vaših apartmana. CD je namijenjen gostima i agencijama sa kojima ćete surađivati.
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    200,00 kn (5 kom)
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                </div><!-- /price -->
+                <div class="price__desc">
 
-                                <!-- 5 -->
-                                <div class="price">
+                </div>
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            KLASIČNA RAZGLEDNICA OBJEKTA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            2.500,00 kn/objekt
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__note">
+                  Izrada CD na kojem će biti fotografije, opisi i cijene vaših apartmana. CD je namijenjen gostima i agencijama s kojima ćete surađivati.
+                </div>
 
-                                    <div class="price__desc">
+              </div>
+              <!-- /price -->
 
-                                    </div>
+              <!-- 5 -->
+              <div class="price">
 
-                                    <div class="price__note">
+                <div class="price__row">
+                  <div class="price__name">
+                    KLASIČNA RAZGLEDNICA OBJEKTA
+                  </div>
+                  <div class="price__line">
 
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    2.500,00 kn/objekt
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                </div><!-- /price -->
+                <div class="price__desc">
 
-                                <!-- 6 -->
-                                <div class="price">
+                </div>
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            WEB STRANICA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            od 4.000,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__note">
 
-                                    <div class="price__desc">
-                                        (preporuke za stranice niže kvalitete po dogovoru)
-                                    </div>
+                </div>
 
-                                    <div class="price__note">
+              </div>
+              <!-- /price -->
 
-                                    </div>
+              <!-- 6 -->
+              <div class="price">
 
-                                </div><!-- /price -->
+                <div class="price__row">
+                  <div class="price__name">
+                    WEB STRANICA
+                  </div>
+                  <div class="price__line">
 
-                                <!-- 7 -->
-                                <div class="price">
+                  </div>
+                  <div class="price__price">
+                    od 4.000,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            QR code
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            50,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__desc">
+                  
+                </div>
 
-                                    <div class="price__desc">
+                <div class="price__note">
 
-                                    </div>
+                </div>
 
-                                    <div class="price__note">
+              </div>
+              <!-- /price -->
 
-                                    </div>
+              <!-- 7 -->
+              <div class="price">
 
-                                </div><!-- /price -->
+                <div class="price__row">
+                  <div class="price__name">
+                    QR code
+                  </div>
+                  <div class="price__line">
 
-                                <!-- 8 -->
-                                <div class="price">
+                  </div>
+                  <div class="price__price">
+                    50,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            VIRTUALNA ŠETNJA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            od 660,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__desc">
 
-                                    <div class="price__desc">
+                </div>
 
-                                    </div>
+                <div class="price__note">
 
-                                    <div class="price__note">
+                </div>
 
-                                    </div>
+              </div>
+              <!-- /price -->
 
-                                </div><!-- /price -->
+              <!-- 8 -->
+              <div class="price">
 
-                                <!-- 9 -->
-                                <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    VIRTUALNA ŠETNJA
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            OTVARANJE I EDUKACIJA UPOTREBE E-MAILA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            300,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+                  </div>
+                  <div class="price__price">
+                    od 660,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__desc">
+                <div class="price__desc">
 
-                                    </div>
+                </div>
 
-                                    <div class="price__note">
+                <div class="price__note">
 
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+              </div>
+              <!-- /price -->
 
-                                <!-- 10 -->
-                                <div class="price">
+              <!-- 9 -->
+              <div class="price">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            UPISIVANJE OBJEKTA NA GOOGLE MAP
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            200,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__row">
+                  <div class="price__name">
+                    OTVARANJE I EDUKACIJA UPOTREBE E-MAILA
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__desc">
+                  </div>
+                  <div class="price__price">
+                    300,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    </div>
+                <div class="price__desc">
 
-                                    <div class="price__note">
+                </div>
 
-                                    </div>
+                <div class="price__note">
 
-                                </div><!-- /price -->
+                </div>
 
-                                <!-- 11 -->
-                                <div class="price">
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            IZRADA FACEBOOK-a
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            550,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+              <!-- 10 -->
+              <div class="price">
 
-                                    <div class="price__desc">
+                <div class="price__row">
+                  <div class="price__name">
+                    UPISIVANJE OBJEKTA NA GOOGLE MAP
+                  </div>
+                  <div class="price__line">
 
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    200,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__note">
+                <div class="price__desc">
 
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+                <div class="price__note">
 
-                                <!-- 12 -->
-                                <div class="price">
+                </div>
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            EDUKACIJA VOĐENJA FACEBOOK-a
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            500,00 kn
-                                        </div>
-                                    </div><!-- /price-row -->
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__desc">
+              <!-- 11 -->
+              <div class="price">
 
-                                    </div>
+                <div class="price__row">
+                  <div class="price__name">
+                    IZRADA FACEBOOK-a
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__note">
+                  </div>
+                  <div class="price__price">
+                    550,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    </div>
+                <div class="price__desc">
 
-                                </div><!-- /price -->
+                </div>
 
-                                <!-- 13 -->
-                                <div class="price">
+                <div class="price__note">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            VOĐENJE FACEBOOK prezentacije
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            500,00 kn/godišnje/1 objava mjesečno
-                                        </div>
-                                    </div><!-- /price-row -->
+                </div>
 
-                                    <div class="price__desc">
+              </div>
+              <!-- /price -->
 
-                                    </div>
+              <!-- 12 -->
+              <div class="price">
 
-                                    <div class="price__note">
+                <div class="price__row">
+                  <div class="price__name">
+                    EDUKACIJA VOĐENJA FACEBOOK-a
+                  </div>
+                  <div class="price__line">
 
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    500,00 kn
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                </div><!-- /price -->
+                <div class="price__desc">
 
-                                <!-- 14 -->
-                                <div class="price">
+                </div>
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            VOĐENJE FACEBOOK kampanje
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            na upit
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__note">
 
-                                    <div class="price__desc">
+                </div>
 
-                                    </div>
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__note">
+              <!-- 13 -->
+              <div class="price">
 
-                                    </div>
+                <div class="price__row">
+                  <div class="price__name">
+                    VOĐENJE FACEBOOK prezentacije
+                  </div>
+                  <div class="price__line">
 
-                                </div><!-- /price -->
+                  </div>
+                  <div class="price__price">
+                    500,00 kn/godišnje/1 objava mjesečno
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                <!-- 15 -->
-                                <div class="price">
+                <div class="price__desc">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            GOOGLE Ad Words
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            od 500,00 kn/ mjesečno
-                                        </div>
-                                    </div><!-- /price-row -->
+                </div>
 
-                                    <div class="price__desc">
+                <div class="price__note">
 
-                                    </div>
+                </div>
 
-                                    <div class="price__note">
+              </div>
+              <!-- /price -->
 
-                                    </div>
+              <!-- 14 -->
+              <div class="price">
 
-                                </div><!-- /price -->
+                <div class="price__row">
+                  <div class="price__name">
+                    VOĐENJE FACEBOOK kampanje
+                  </div>
+                  <div class="price__line">
 
-                                <!-- 16 -->
-                                <div class="price">
+                  </div>
+                  <div class="price__price">
+                    na upit
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            SAVJETOVANJE PRI UREĐENJU INTERIJERA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            po dogovoru
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__desc">
 
-                                    <div class="price__desc">
+                </div>
 
-                                    </div>
+                <div class="price__note">
 
-                                    <div class="price__note">
+                </div>
 
-                                    </div>
+              </div>
+              <!-- /price -->
 
-                                </div><!-- /price -->
+              <!-- 15 -->
+              <div class="price">
 
-                                <!-- 17 -->
-                                <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    GOOGLE Ad Words
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            HORTIKULTURA –savjetovanje
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            po dogovoru
-                                        </div>
-                                    </div><!-- /price-row -->
+                  </div>
+                  <div class="price__price">
+                    od 500,00 kn/ mjesečno
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__desc">
+                <div class="price__desc">
 
-                                    </div>
+                </div>
 
-                                    <div class="price__note">
+                <div class="price__note">
 
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+              </div>
+              <!-- /price -->
 
-                                <!-- 18 -->
-                                <div class="price">
+              <!-- 16 -->
+              <div class="price">
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            AŽURIRANJE KALENDARA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            od 100,00 kn/po kalendaru
-                                        </div>
-                                    </div><!-- /price-row -->
+                <div class="price__row">
+                  <div class="price__name">
+                    SAVJETOVANJE PRI UREĐENJU INTERIJERA
+                  </div>
+                  <div class="price__line">
 
-                                    <div class="price__desc">
+                  </div>
+                  <div class="price__price">
+                    po dogovoru
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    </div>
+                <div class="price__desc">
 
-                                    <div class="price__note">
+                </div>
 
-                                    </div>
+                <div class="price__note">
 
-                                </div><!-- /price -->
+                </div>
 
-                                <!-- 19 -->
-                                <div class="price">
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            VOĐENJE MARKETINGA APARTMANA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            od 4.000,00 kn/mjesečno
-                                        </div>
-                                    </div><!-- /price-row -->
+              <!-- 17 -->
+              <div class="price">
 
-                                    <div class="price__desc">
+                <div class="price__row">
+                  <div class="price__name">
+                    HORTIKULTURA – savjetovanje
+                  </div>
+                  <div class="price__line">
 
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    po dogovoru
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__note">
+                <div class="price__desc">
 
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+                <div class="price__note">
 
+                </div>
 
-                                <!-- 20 -->
-                                <div class="price">
+              </div>
+              <!-- /price -->
 
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            IZRADA I POMOĆ PRI PRIJAVI NA NATJEČAJE ZA BESPOVRATNA SREDSTVA
-                                        </div>
-                                        <div class="price__line">
-                                            
-                                        </div>
-                                        <div class="price__price">
-                                            prema dogovoru
-                                        </div>
-                                    </div><!-- /price-row -->
+              <!-- 18 -->
+              <div class="price">
 
-                                    <div class="price__desc">
+                <div class="price__row">
+                  <div class="price__name">
+                    AŽURIRANJE KALENDARA
+                  </div>
+                  <div class="price__line">
 
-                                    </div>
+                  </div>
+                  <div class="price__price">
+                    od 100,00 kn/po kalendaru
+                  </div>
+                </div>
+                <!-- /price-row -->
 
-                                    <div class="price__note">
+                <div class="price__desc">
 
-                                    </div>
+                </div>
 
-                                </div><!-- /price -->
+                <div class="price__note">
 
+                </div>
 
+              </div>
+              <!-- /price -->
 
-                            </div><!-- /pricelist -->
+              <!-- 19 -->
+              <div class="price">
 
+                <div class="price__row">
+                  <div class="price__name">
+                    VOĐENJE MARKETINGA APARTMANA
+                  </div>
+                  <div class="price__line">
 
+                  </div>
+                  <div class="price__price">
+                    od 4.000,00 kn/mjesečno
+                  </div>
+                </div>
+                <!-- /price-row -->
 
+                <div class="price__desc">
 
-                            <div class="pricelist">
-                                <h3>Oglašavanje</h3>
+                </div>
 
+                <div class="price__note">
 
-                                <!-- 1 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            PRIJAVA APARTMANA NA ON-LINE PORTAL
-                                        </div>
+                </div>
 
-                                        <div class="price__line">
-                                        </div>
+              </div>
+              <!-- /price -->
 
-                                        <div class="price__price">
-                                            300,00 kn/apartman
-                                            <br>
-                                            Samo Expedia 450,00 kn/apartman
-                                        </div>
-                                    </div><!-- /price__row -->
-
-                                    <div class="price__desc">
-                                        Booking.com, Expedia.com, Only-Apartments.com, Holiday-Velvet, ...
-                                    </div>
-                                </div>
-
-                                <!-- 2 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            PRIJAVA APARTMANA NA ON-LINE PORTAL
-                                        </div>
 
-                                        <div class="price__line">
-                                        </div>
+              <!-- 20 -->
+              <div class="price">
 
-                                        <div class="price__price">
-                                            200,00 kn/soba
-                                        </div>
-                                    </div><!-- /price__row -->
-
-                                    <div class="price__desc">
-                                        Booking.com, Only-Apartments.com, Holiday-Velvet, ...
-                                    </div>
-                                </div>
-
-                                <!-- 3 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            EDUKACIJA VOĐENJA BOOKINGA NA ON-LINE PORTALU
-                                        </div>
+                <div class="price__row">
+                  <div class="price__name">
+                    PRIJAVA NA NATJEČAJE ZA BESPOVRATNA SREDSTVA
+                  </div>
+                  <div class="price__line">
 
-                                        <div class="price__line">
-                                        </div>
+                  </div>
+                  <div class="price__price">
+                    prema dogovoru
+                  </div>
+                </div>
+                <!-- /price-row -->
+
+                <div class="price__desc">
+
+                </div>
+
+                <div class="price__note">
+
+                </div>
+
+              </div>
+              <!-- /price -->
+
+
+
+            </div>
+            <!-- /pricelist -->
+
+
+
+
+            <div class="pricelist">
+              <h3>Oglašavanje</h3>
+
+
+              <!-- 1 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    PRIJAVA APARTMANA NA ON-LINE PORTAL
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    300,00 kn/apartman
+                    <br> Samo Expedia 450,00 kn/apartman
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+                  Booking.com, Expedia.com, Only-Apartments.com, Holiday-Velvet, ...
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    PRIJAVA APARTMANA NA ON-LINE PORTAL
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    200,00 kn/soba
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+                  Booking.com, Only-Apartments.com, Holiday-Velvet, ...
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    EDUKACIJA VOĐENJA BOOKINGA NA ON-LINE PORTALU
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    od 1.000,00 kn/portal
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    PRIJAVA APARTMANA NA BESPLATNI PORTAL
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    250,00 kn/apartman
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    PRIJAVA APARTMANA NA BESPLATNI PORTAL
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    150,00 kn/soba
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    EDUKACIJA VOĐENJA BOOKINGA NA BESPLATNIM
+                    <br> REZERVACIJSKIM SUSTAVIMA i PORTALIMA
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    800,00 kn
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+                  Airbnb, Atraveo, Housetrip, ...
+                </div>
+              </div>
+
+              <!-- 7 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    PRIJAVA NA PLAĆENI PORTAL
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    600,00 kn/portal
+                  </div>
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+                  Plaćeni portal može biti hrvatski ili inozemni. Inozemni portali mogu biti namijenjeni češkom, poljskom, engleskom, njemačkom, talijanskom, ruskom, skandinavskom, američkom, ... tržištu. Cijene su od 100,00 kn do 10.000,00 kn po apartmanu. </br> *NAPOMENA: U cijenu nije uračunat PDV
+                </div>
+              </div>
+
+              <!-- 8 -->
+              <div class="price">
+                <div class="price__row">
+                  <div class="price__name">
+                    VOĐENJE OBJEKTA NA TRIP ADVISORU
+                  </div>
+
+                  <div class="price__line">
+                  </div>
+
+                  <div class="price__price">
+                    od 300 kn/mj
+                  </div>
+
+                </div>
+                <!-- /price__row -->
+
+                <div class="price__desc">
+                  (upravljanje komentarima, odgovaranje na kometare, izrada profila, ...)
+                </div>
+              </div>
+
+            </div>
+            <!-- /pricelist -->
+
+          </div>
+
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /section-row -->
+    </section>
+    <!-- /counselling -->
+
+    <section id="contact" class="section">
+      <div class="section-row">
+
+        <div class="contact-wrap">
+          <div class="contact-top">
+            <div class="container">
+              <div class="about">
+                <h3>Interligo d.o.o.</h3>
+                <h4>Savjetovalište za vlasnike obiteljskog smještaja</h4>
+                <div class="info">
+                  <div class="info-row">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> <span>Velebitska 148c (zgrada Belvedere), 21000 Split</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="fa fa-desktop" aria-hidden="true"></i> <a href="http://www.interligo.hr/">www.interligo.hr</a>
+                  </div>
+                  <div class="info-row">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:interligo@interligo.hr">interligo@interligo.hr</a>
+                  </div>
+                </div>
+
+                <ul>
+                  <!--<li><i class="fa fa-phone" aria-hidden="true"></i><b>Tel:</b> 021/786 - 480</li>-->
+                  <li><i class="fa fa-fax" aria-hidden="true"></i><b>Fax:</b> 021/632 - 519</li>
+                </ul>
+
+                <ul>
+                  <li><b>OIB:</b> 59543941730</li>
+                  <li><b>IBAN:</b> HR66 2360 0001 1023 4928 0</li>
+                  <li>SWIFT ZABAHR2X</li>
+                </ul>
+              </div>
+
+              <div class="contacts">
+
+                <!-- 1 -->
+                <div class="contacts__item">
+                  <div class="contacts__item--image anamarija">
+
+                  </div>
+
+                  <div class="contacts__item--content">
+                    <span class="contacts-name">Anamarija Cicarelli</span>
+                    <ul>
+                      <li><span>Mob:</span> 099/3850022</li>
+                      <li><span>Skype:</span> anamarija.cicarelli</li>
+                      <li><span>Viber/WhatsApp:</span> 099/3850022</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="contacts__item">
+                  <div class="contacts__item--image meri">
+
+                  </div>
+
+                  <div class="contacts__item--content">
+                    <span class="contacts-name">Meri Čizmić Kraljević</span>
+                    <ul>
+                      <li><span>Mob:</span> 099/3198962</li>
+                      <li><span>Skype:</span> meri.kraljevic</li>
+                      <li><span>Viber/WhatsApp:</span> 099/3198962</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /container -->
+          </div>
+
+          <div class="contact-bot">
+            <div class="container">
+
+              <div class="copyright-wrap">
+                <div class="social">
+
+                  <!-- 1 -->
+                  <div class="social__item">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  </div>
 
-                                        <div class="price__price">
-                                            od 1.000,00 kn/portal
+                  <!--
+                                        <div class="social__item">
+                                            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                                         </div>
-                                    </div><!-- /price__row -->
 
-                                    <div class="price__desc">
                                         
-                                    </div>
-                                </div>
-
-                                <!-- 4 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            PRIJAVA APARTMANA NA BESPLATNI PORTAL
+                                        <div class="social__item">
+                                            <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
                                         </div>
 
-                                        <div class="price__line">
+                                        
+                                        <div class="social__item">
+                                            <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
                                         </div>
 
-                                        <div class="price__price">
-                                            250,00 kn/apartman
-                                        </div>
-                                    </div><!-- /price__row -->
-
-                                    <div class="price__desc">
-                                    </div>
-                                </div>
-
-                                <!-- 5 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            PRIJAVA APARTMANA NA BESPLATNI PORTAL
+                                        
+                                        <div class="social__item">
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         </div>
 
-                                        <div class="price__line">
+                                        
+                                        <div class="social__item">
+                                            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                         </div>
+                                        -->
 
-                                        <div class="price__price">
-                                            150,00 kn/soba
-                                        </div>
-                                    </div><!-- /price__row -->
+                </div>
+                <!-- /social -->
 
-                                    <div class="price__desc">
+                <div class="copyright">
+                  &copy; Copyright 2017 by Interligo. All rights reserved.
+                </div>
+              </div>
+              <!-- /copyright -->
 
-                                    </div>
-                                </div>
+            </div>
+            <!-- /container -->
+          </div>
 
-                                <!-- 6 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            EDUKACIJA VOĐENJA BOOKINGA NA BESPLATNIM 
-                                            <br>
-                                            REZERVACIJSKIM SUSTAVIMA i PORTALIMA
-                                        </div>
+        </div>
+        <!-- /contact-wrap -->
 
-                                        <div class="price__line">
-                                        </div>
-
-                                        <div class="price__price">
-                                            800,00 kn
-                                        </div>
-                                    </div><!-- /price__row -->
-
-                                    <div class="price__desc">
-                                        Airbnb, Atraveo, Housetrip, ...
-                                    </div>
-                                </div>
-
-                                <!-- 7 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            PRIJAVA NA PLAĆENI PORTAL
-                                        </div>
-
-                                        <div class="price__line">
-                                        </div>
-
-                                        <div class="price__price">
-                                            600,00 kn/portal
-                                        </div>
-                                    </div><!-- /price__row -->
-
-                                    <div class="price__desc">
-                                        Plaćeni portal može biti hrvatski ili inozemni. Inozemni portali mogu biti namijenjeni češkom, poljskom, engleskom, njemačkom, talijanskom, ruskom, skandinavskom, američkom, ... tržištu. Cijene se kreću od 100,00 kn do 10.000,00 kn po apartmanu.
-                                    </div>
-                                </div>
-
-                                <!-- 8 -->
-                                <div class="price">
-                                    <div class="price__row">
-                                        <div class="price__name">
-                                            VOĐENJE OBJEKTA NA TRIP ADVISORU
-                                        </div>
-
-                                        <div class="price__line">
-                                        </div>
-
-                                        <div class="price__price">
-                                            od 300 kn/mj
-                                        </div>
-
-                                    </div><!-- /price__row -->
-
-                                    <div class="price__desc">
-                                        (upravljanje komentarima, odgovaranje na kometare, izrada profila, ...) 
-                                    </div>
-                                </div>
-
-                            </div><!-- /pricelist -->
-
-                        </div>
-						
-					</div><!-- /container -->
-				</div><!-- /section-row -->
-			</section><!-- /counselling -->
-
-			<section id="contact" class="section">
-				<div class="section-row">
-
-					<div class="contact-wrap">
-						<div class="contact-top">
-							<div class="container">
-								<div class="about">
-									<h3>Interligo d.o.o.</h3>
-									<h4>Savjetovalište za vlasnike obiteljskog smještaja</h4>
-									<div class="info">
-										<div class="info-row">
-											<i class="fa fa-map-marker" aria-hidden="true"></i> <span>Velebitska 148c (zgrada Belvedere), 21000 Split</span>
-										</div>
-										<div class="info-row">
-											<i class="fa fa-desktop" aria-hidden="true"></i> <a href="http://www.interligo.hr/">www.interligo.hr</a>
-										</div>
-										<div class="info-row">
-											<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:interligo@interligo.hr">interligo@interligo.hr</a>
-										</div>
-									</div>
-
-									<ul>
-										<!--<li><i class="fa fa-phone" aria-hidden="true"></i><b>Tel:</b> 021/786 - 480</li>-->
-										<li><i class="fa fa-fax" aria-hidden="true"></i><b>Fax:</b> 021/632 - 519</li>
-									</ul>
-
-									<ul>
-										<li><b>OIB:</b> 59543941730</li>
-										<li><b>IBAN:</b> HR66 2360 0001 1023 4928 0</li>
-										<li>SWIFT ZABAHR2X</li>
-									</ul>
-								</div>
-
-								<div class="contacts">
-									
-									<!-- 1 -->
-									<div class="contacts__item">
-										<div class="contacts__item--image anamarija">
-
-										</div>
-
-										<div class="contacts__item--content">
-											<span class="contacts-name">Anamarija Cicarelli</span>
-											<ul>
-												<li><span>Mob:</span> 099/3850022</li>
-												<li><span>Skype:</span> anamarija.cicarelli</li>
-												<li><span>Viber/WhatsApp:</span> 099/3850022</li>
-											</ul>
-										</div>
-									</div>
-
-									<!-- 2 -->
-									<div class="contacts__item">
-										<div class="contacts__item--image meri">
-
-										</div>
-
-										<div class="contacts__item--content">
-											<span class="contacts-name">Meri Čizmić Kraljević</span>
-											<ul>
-												<li><span>Mob:</span> 099/3198962</li>
-												<li><span>Skype:</span> meri.kraljevic</li>
-												<li><span>Viber/WhatsApp:</span> 099/3198962</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div><!-- /container -->
-						</div>
-
-						<div class="contact-bot">
-							<div class="container">
-
-								<div class="copyright-wrap">
-									<div class="social">
-
-										<!-- 1 -->
-										<div class="social__item">
-											<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-										</div>
-
-										<!--
-										<div class="social__item">
-											<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-										</div>
-
-										
-										<div class="social__item">
-											<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-										</div>
-
-										
-										<div class="social__item">
-											<a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-										</div>
-
-										
-										<div class="social__item">
-											<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-										</div>
-
-										
-										<div class="social__item">
-											<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-										</div>
-										-->
-
-									</div><!-- /social -->
-
-									<div class="copyright">
-										&copy; Copyright 2017 by Interligo. All rights reserved.
-									</div>
-								</div><!-- /copyright -->
-
-							</div><!-- /container -->
-						</div>
-
-					</div><!-- /contact-wrap -->
-
-				</div><!-- /section-row -->
-			</section><!-- /contact -->
+      </div>
+      <!-- /section-row -->
+    </section>
+    <!-- /contact -->
 
 
-		</div><!-- /body-wrap -->
+  </div>
+  <!-- /body-wrap -->
 
 
-    <!-- SCRIPTS -->
-	<script src="../js/script.js"></script>
+  <!-- SCRIPTS -->
+  <script src="../js/script.js"></script>
 
-    <script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-		ga('create', 'UA-93156088-1', 'auto');
-		ga('send', 'pageview');
+  ga('create', 'UA-93156088-1', 'auto');
+  ga('send', 'pageview');
+  </script>
 
-	</script>
+</body>
 
-	</body>
 </html>
