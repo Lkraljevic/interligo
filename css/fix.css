@@ -39,4 +39,65 @@
   background: rgba(50, 161, 216, 0.7);  
 }
 
+/* Naslovnica */
+.newsletter .newsletter__input input[type=email] {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #7e7e88;
+    width: 180px;
+    margin-right: 5px;
+}
+
+.newsletter .newsletter__input input[type=submit] {
+    background: #6abf21;
+    border: 1px solid #6abf21;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.newsletter .newsletter__input input[type=submit]:hover {
+    border: 1px solid #fff;
+}
+
+/* Savjetovalište */
+
+.pricelist h3 {
+  color: #dcdada; 
+}
+.price__name {
+  color: #151f2b !important;
+}
+.price__line  {
+  border-bottom: 1px dotted rgba(102, 102, 107, 0.78) !important;
+}
+.price__price {
+  color: #163965 !important;
+}
+.price__note, .price__desc {
+  color: #dcdada !important;
+}
+section#counselling {
+  background-color: #32a1d8 !important;
+}
+
+/* Knjige */
+section#books {
+  background-color: #32a1d8 !important;
+}
+.books-item__name {
+  color: #dcdada !important;
+}
+
+.books-item__line {
+  background: #035e8c !important;
+}
+.books-item__desc {
+  color: #dcdada !important;
+}
+
+
 

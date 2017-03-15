@@ -1,4 +1,16 @@
-
+$(function() {                                    //run when the DOM is ready
+	const element = document.getElementById('newsletter')
+	element.addEventListener('submit', event => {
+		event.preventDefault();
+		$.ajax({
+			url: '/newsletter',
+			data: $(event.srcElement).serialize(),
+			success: function(a) {
+				 document.getElementById('newsletter_email').value = ''
+			}
+		});
+	});
+});
 //mobile-nav-open
 $(function() {                                    //run when the DOM is ready
 	$(".mobile-nav-icon").click(function() {      //use a class, since your ID gets mangled
